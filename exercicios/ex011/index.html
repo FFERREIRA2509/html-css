@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/Escritorio300.jpg" type="image/jpg">
+        <source media="(max-width: 1100px)" srcset="imagens/Escritorio700.jpg" type="image/jpg">
+        <img src="imagens/Escritorio1090.jpg" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo aúdio</h1>
+    <p>Vamos aprender a reprodução de aúdio em HTML5.</p>
+    <audio src="midia/O Rio Grande me criou.mp3" controls autoplay></audio>
+    <audio preload="metadata" controls autoplay>
+        <source src="midia/O Rio Grande me criou.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador não é compatível.</p>
+        <p><a href="midia/O Rio Grande me criou.mp3">Click aqui</a> para baixar o arquivo.</p>
+    </audio>
+</body>
+</html>
