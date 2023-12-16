@@ -82,8 +82,6 @@ main img {
     padding-bottom: 40px;
     }
 
-
-
 body {
         
         margin: auto;
@@ -205,3 +203,62 @@ footer {
             text-align: center;
             
         }
+
+div.homeinicial{
+    display: flex; 
+    align-items: center;
+}
+
+div > div {
+    margin: auto;
+}
+
+h1.competencia{
+    font-size: 50px;
+    text-align: left;
+}
+
+ul.destaques {
+    list-style-type: '\2714\000A0\000A0\000A0\000A0';
+    margin-top: 15px;
+    font-family: var(--fontepadrao);
+    font-size: 20px;
+    text-align: left;
+    list-style-position: inside;
+    color: var(--corazul)
+    
+}
+
+div.f4contabilidade {
+    min-height: 600px;
+    max-height: 800px;
+    min-width: 350px;
+    margin-top: -60px;
+}
+
+#f4{
+    margin-top: -25px;
+}
+
+main.f4 {
+    margin: auto;
+    min-width: 600px;
+    max-width: 1000px;
+    min-height: 90px;
+    
+}
+
+body.f4 {
+    
+}
+
+footer.f4 {
+    padding: 5px;
+    background-color: #003c5e;
+    font-family: var(--fontepadrao); color: var(--corbranco);
+    box-shadow: 0px 0px 5px #201815;
+    font-size: 15px;
+    text-align: center;
+    
+}
+
