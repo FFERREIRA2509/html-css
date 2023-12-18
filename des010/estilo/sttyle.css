@@ -46,12 +46,18 @@ nav {
     padding-top: 10px;
     padding-bottom: 20px;    
 }
-a.abrirempresa {
-    width: 320px; 
-    background-color: #83a735; 
-    font: MontSerrat-Mediun; 
-    color: white; 
+
+
+#artigos {
+    width: 80px;
+    padding-right: 150px
 }
+
+
+#areadocliente {
+    padding-right: 10px;
+}
+
 
 nav > a {
     height:25px;
@@ -62,7 +68,7 @@ nav > a {
     align-items: center;
     text-align: center;
     padding-top: 15px;
-    border-radius: 20px;
+    
 }
 
 
@@ -84,11 +90,11 @@ main img {
 
 body {
         
-        margin: auto;
-        font-family: var(--fontedestaque); color: var(--corazul);
-        font-size: 20px;
-        text-align: justify;
-        }
+    margin: auto;
+    font-family: var(--fontedestaque); color: var(--corazul);
+    font-size: 20px;
+    text-align: justify;
+}
 
 div {
     
@@ -195,56 +201,129 @@ iframe {
 }
 
 footer {
-            padding: 5px;
-            background-color: #003c5e;
-            font-family: var(--fontepadrao); color: var(--corbranco);
-            box-shadow: 0px 0px 5px #201815;
-            font-size: 15px;
-            text-align: center;
+    padding: 5px;
+    background-color: #003c5e;
+    font-family: var(--fontepadrao); color: var(--corbranco);
+    box-shadow: 0px 0px 5px #201815;
+    font-size: 15px;
+    text-align: center;
             
         }
 
 div.homeinicial{
-    display: flex; 
-    align-items: center;
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: flex-start;
 }
 
-div > div {
-    margin: auto;
-}
+
 
 h1.competencia{
-    font-size: 50px;
+    font-size: 40px;
     text-align: left;
+    margin-bottom: 0px;
+    
 }
 
 ul.destaques {
     list-style-type: '\2714\000A0\000A0\000A0\000A0';
+    margin-bottom: 60px;
     margin-top: 15px;
+    margin-left: -30px;
     font-family: var(--fontepadrao);
     font-size: 20px;
     text-align: left;
     list-style-position: inside;
-    color: var(--corazul)
-    
+    color: var(--corazul);
+}
+
+ul > li {
+    margin: 15px 0px 15px 0px;
 }
 
 div.f4contabilidade {
-    min-height: 600px;
-    max-height: 800px;
-    min-width: 350px;
-    margin-top: -60px;
+    margin-top: -20px;
+    min-height: 400px;
+    max-height: 480px;
+    min-width: 200px;
+    max-width: 400px;
+    
 }
 
+
 #f4{
-    margin-top: -25px;
+  
+   max-width: 800px;
+   min-width: 650px;
+   
+    
+}
+
+#imagemprotocolo {
+    min-height: 400px;
+    max-height: 480px;
+    min-width: 400px;
+    max-width: 400px;
+    
+}
+
+
+a.abrirempresa {
+    padding: 10px 10px 10px 10px;
+    max-width: 230px; 
+    height: 20px;
+    background-color: #83a735; 
+    font: MontSerrat-Mediun; 
+    color: white; 
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+}
+
+a.contador {
+    margin-left: 100px;
+    padding: 10px 10px 10px 10px;
+    max-width: 230px; 
+    height: 20px;
+    background-color: var(--corbranco); 
+    font: MontSerrat-Mediun; 
+    color: var(--corazul); 
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    border: 0.1px solid var(--corazul);
+    border-radius: 5px;
+    
+    
+}
+
+a.contador:hover {
+    background-color: var(--corverde);
+    font-size: var(--corbranco);
+    border: 0.1px solid var(--corbranco);
 }
 
 main.f4 {
-    margin: auto;
-    min-width: 600px;
+    
+    min-width: 450px;
     max-width: 1000px;
     min-height: 90px;
+    
+}
+
+#serviços {
+    min-width: 450px;
+    max-width: 1600px;
+    background-color: var(--corverde);
     
 }
 
