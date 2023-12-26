@@ -213,7 +213,6 @@ footer {
 div.homeinicial{
     display: flex;
     align-items: stretch;
-    margin-bottom: 20px;
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: flex-start;
@@ -231,7 +230,7 @@ h1.competencia{
 
 ul.destaques {
     list-style-type: '\2714\000A0\000A0\000A0\000A0';
-    margin-bottom: 60px;
+    margin-bottom: 39px;
     margin-top: 15px;
     margin-left: -30px;
     font-family: var(--fontepadrao);
@@ -242,7 +241,7 @@ ul.destaques {
 }
 
 ul > li {
-    margin: 15px 0px 15px 0px;
+    margin: 10px 0px 10px 0px;
 }
 
 div.f4contabilidade {
@@ -259,6 +258,7 @@ div.f4contabilidade {
   
    max-width: 800px;
    min-width: 650px;
+   
    
     
 }
@@ -312,22 +312,54 @@ a.contador:hover {
     border: 0.1px solid var(--corbranco);
 }
 
+#f4segunda {
+    background-size: var(--corverde);
+    margin-left: 120px;
+    margin-right: 100px;
+    width: auto;
+    min-height: 90px;
+    max-height: 550px;
+
+}
+
+#prosperidade {
+    width: 250;
+    height: 220;
+    padding-top: 30px;
+}
+
+div.homesegunda {
+    outline-color: var(--corverde);
+    background-color: var(--corverde);
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+}
+
 main.f4 {
-    
+    margin-left: 120px;
+    margin-right: 100px;
     min-width: 450px;
     max-width: 1000px;
     min-height: 90px;
+    max-height: 650px;
     
 }
 
 #serviços {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: flex-start;
     min-width: 450px;
     max-width: 1600px;
     background-color: var(--corverde);
-    
-}
-
-body.f4 {
+    min-height: 600px;
     
 }
 
