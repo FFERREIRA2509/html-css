@@ -39,7 +39,7 @@ nav {
     text-align: center;
     background-color: var(--corbranco);
     font-family: var(--fontepadrao); color: var(--corbranco);
-    border-radius: 10px;
+    border-radius: 5px;
     height: 100px;
     padding-left: 20px;
     padding-right: 20px;
@@ -78,8 +78,8 @@ main {
     margin: auto;
     padding: 10px;
     margin-bottom: 5px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 main img {
@@ -89,7 +89,6 @@ main img {
     }
 
 body {
-        
     margin: auto;
     font-family: var(--fontedestaque); color: var(--corazul);
     font-size: 20px;
@@ -97,7 +96,6 @@ body {
 }
 
 div {
-    
     min-height: 550px;
     font-size: 15px;
     text-align: center;
@@ -112,8 +110,7 @@ div h2 {
     padding-top: 40px;
 }
 
-div.video {
-    
+div.video {  
     margin: 0px -20px 10px -20px;
     padding: 10px;
     position: relative;
@@ -145,7 +142,7 @@ strong {
 aside {
     background-color: var(--corverde);
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     
 }
 
@@ -236,8 +233,8 @@ ul.destaques {
     font-family: var(--fontepadrao);
     font-size: 20px;
     text-align: left;
-    list-style-position: inside;
     color: var(--corazul);
+    list-style-position: inside;
 }
 
 ul > li {
@@ -254,13 +251,10 @@ div.f4contabilidade {
 }
 
 
-#f4{
-  
+#f4 {
    max-width: 800px;
    min-width: 650px;
    
-   
-    
 }
 
 #imagemprotocolo {
@@ -284,7 +278,7 @@ a.abrirempresa {
     font-weight: bold;
     align-items: center;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 a.contador {
@@ -312,25 +306,26 @@ a.contador:hover {
     border: 0.1px solid var(--corbranco);
 }
 
+
+
 #f4segunda {
     background-size: var(--corverde);
     margin-left: 120px;
     margin-right: 100px;
     width: auto;
-    min-height: 90px;
-    max-height: 550px;
+    min-height: 900px;
+    max-height: 950px;
 
 }
 
-#prosperidade {
-    width: 250;
-    height: 220;
-    padding-top: 30px;
+#destaque3 {
+    margin: auto;
+    background-color: var(--corverde);
 }
 
 div.homesegunda {
-    outline-color: var(--corverde);
     background-color: var(--corverde);
+    margin-left: 30px; 
     display: flex;
     align-items: stretch;
     flex-direction: row;
@@ -338,6 +333,11 @@ div.homesegunda {
     align-content: flex-start;
     justify-content: flex-start;
 }
+
+#f42 {
+    max-width: 650px;
+    min-width: 600px;
+ }
 
 main.f4 {
     margin-left: 120px;
@@ -362,6 +362,126 @@ main.f4 {
     min-height: 600px;
     
 }
+
+#ContabilidadeInteligente {
+    font-size: 38px;
+    text-align: left;
+    color: var(--corbranco);
+    padding: 5px 5px 5px 8px;
+}
+
+ul.destaques2 {
+    margin-bottom: 39px;
+    margin-top: 15px;
+    font-family: var(--fontepadrao);
+    font-size: 20px;
+    text-align: justify;
+    color: var(--corbranco);
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+#prosperidade {
+    border-radius: 5px;
+    width: 250;
+    height: 220;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    margin-left: -20px;
+}
+
+
+#NossosServiços {
+    margin-left: 30px;
+    padding: 10px 10px 10px 10px;
+    background-color: var(--corbranco); 
+    font: MontSerrat-Mediun; 
+    color: var(--corazul); 
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    color: var(--corverde);
+    border-radius: 5px;
+    border: 0.1px solid var(--corbranco);
+    
+}
+
+#NossosServiços:hover {
+    background-color: var(--corverde);
+    color: var(--corazul);
+    border: 0.1px solid var(--corazul);
+    
+}
+
+#empreendedores {
+    width: 250;
+    height: 220;
+    padding-top: 130px;
+    margin-left: 20px;
+
+}
+
+#falecomumcontador {
+    border: 1px solid var(--corbranco);
+    margin-left: 100px;
+    padding: 10px 10px 10px 10px;
+    max-width: 230px; 
+    height: 20px;
+    background-color: var(--corbranco); 
+    font: MontSerrat-Mediun; 
+    color: var(--corverde); 
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#falecomumcontador:hover {
+    background-color: var(--corverde);
+    color: var(--corazul);
+    border: 0.1px solid var(--corazul);
+}
+
+#abrirempresa {
+    border: 1px solid var(--corbranco);
+    margin-left: 30px;
+    padding: 10px 10px 10px 10px;
+    max-width: 210px; 
+    height: 20px;
+    background-color: var(--corbranco); 
+    font: MontSerrat-Mediun; 
+    color: var(--corverde); 
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+#abrirempresa:hover {
+    background-color: var(--corverde);
+    color: var(--corazul);
+    border: 0.1px solid var(--corazul);
+}
+
+#sobrenós {
+    background-color: var(--corazul);
+    color: var(--corbranco);
+}
+
+
+
+picture img {
+    width: 102px;
+    height: 130px;
+}
+
 
 footer.f4 {
     padding: 5px;
