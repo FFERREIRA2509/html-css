@@ -475,13 +475,27 @@ ul.destaques2 {
     color: var(--corbranco);
 }
 
-
-
-picture img {
+#logosobrenos {
     width: 102px;
-    height: 130px;
+    padding: 40px 0px 0px 0px;
+    max-height: 130px;
+    min-height: 130px;
 }
 
+#redessociais {
+    min-width: 500px;
+    max-width: 500px;
+    min-height: 200px;
+    max-height: 200px;
+}
+
+div.redessociais {
+    display: inline;
+    max-height: 130px;
+    min-height: 130px;
+   
+
+}
 
 footer.f4 {
     padding: 5px;
