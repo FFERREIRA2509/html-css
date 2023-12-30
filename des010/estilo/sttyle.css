@@ -475,6 +475,46 @@ ul.destaques2 {
     color: var(--corbranco);
 }
 
+#divisoria {
+    border-bottom: 2px solid var(--cormarron);
+    margin: 0px 20px 0px 20px;
+}
+
+#sobrenostitulo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 5px solid var(--corverde);
+    background-color: var(--corazul);
+    font-family: var(--fontepadrao); color: var(--corbranco);
+    text-align: right;
+    padding: 5px 10px 5px 0px;
+    width: 250px;
+}
+
+#sobrenosparagrafo {
+    font-family: var(--fontepadrao); color: var(--corbranco);
+    text-align: justify;
+    text-indent: 0px;
+    padding: 0px 150px 0px 150px;
+    font-size: 18px;
+}
+
+#valores {
+    list-style-type: decimal;
+    margin-bottom:20px;
+    margin-top: 15px;
+    margin-left: 90px;
+    font-family: var(--fontepadrao);
+    font-size: 18px;
+    text-align: left;
+    color: var(--corbranco);
+    list-style-position: inside;
+}
+
+#valores > li {
+    margin: 0px 0px 0px 0px;
+}
+
 #logosobrenos {
     width: 102px;
     padding: 40px 0px 0px 0px;
@@ -483,6 +523,7 @@ ul.destaques2 {
 }
 
 #redessociais {
+    margin-left: 65px;
     min-width: 500px;
     max-width: 500px;
     min-height: 200px;
@@ -493,8 +534,6 @@ div.redessociais {
     display: inline;
     max-height: 130px;
     min-height: 130px;
-   
-
 }
 
 footer.f4 {
