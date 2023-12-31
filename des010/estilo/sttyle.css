@@ -517,23 +517,46 @@ ul.destaques2 {
 
 #logosobrenos {
     width: 102px;
-    padding: 40px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     max-height: 130px;
     min-height: 130px;
 }
 
 #redessociais {
+    display: flex;
     margin-left: 65px;
     min-width: 500px;
     max-width: 500px;
     min-height: 200px;
     max-height: 200px;
+    background-color: var(--corazul);
 }
 
-div.redessociais {
-    display: inline;
-    max-height: 130px;
-    min-height: 130px;
+#redessociais2 {
+    display: flex;
+    list-style-type: none;
+    
+}
+
+
+
+li.redessociais {
+    padding-right: 20px;
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    list-style-position: none;
+}
+
+#logoredessociais {
+    margin-top: 20px;
+    padding: 0px;
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+
 }
 
 footer.f4 {
