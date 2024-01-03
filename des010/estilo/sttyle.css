@@ -516,19 +516,19 @@ ul.destaques2 {
 }
 
 #logosobrenos {
-    width: 102px;
+    width: 92px;
     padding: 0px 0px 0px 0px;
-    max-height: 130px;
-    min-height: 130px;
+    max-height: 120px;
+    min-height: 120px;
+    
 }
 
 #redessociais {
-    display: flex;
     margin-left: 65px;
-    min-width: 500px;
-    max-width: 500px;
-    min-height: 200px;
-    max-height: 200px;
+    min-width: 450px;
+    max-width: 450px;
+    min-height: 130px;
+    max-height: 130px;
     background-color: var(--corazul);
 }
 
@@ -541,12 +541,21 @@ ul.destaques2 {
 
 
 li.redessociais {
+    padding-top: 20px;
     padding-right: 20px;
     min-width: 40px;
     max-width: 40px;
     min-height: 40px;
     max-height: 40px;
     list-style-position: none;
+}
+
+#redessociais4 {
+    min-width: 92px;
+    max-width: 92px;
+    min-height: 120px;
+    max-height: 120px;
+    padding-right: 20px;
 }
 
 #logoredessociais {
@@ -556,7 +565,16 @@ li.redessociais {
     max-width: 40px;
     min-height: 40px;
     max-height: 40px;
+    border-radius: 50%;
 
+}
+
+#mapa {
+    display: block;
+    min-width: 640px;
+    max-width: 640px;
+    min-height: 200px;
+    max-height: 200px;
 }
 
 footer.f4 {
