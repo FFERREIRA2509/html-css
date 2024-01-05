@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/*
+#003c5e - Azul
+#201815 - Marron
+#83a735 - verde
+#ffffff - Branco
+*/
+
+:root {
+    --corazul: #003c5e;
+    --cormarron: #201815;
+    --corverde: #83a735;
+    --corbranco: #ffffff;
+    --fontepadrao: MontSerrat-Regular;
+    --fontedestaque: MontSerrat-Mediun;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
