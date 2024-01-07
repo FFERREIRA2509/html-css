@@ -19,8 +19,8 @@
             <div id="formulario"><label for="inome">Nome*</label>
                 <input type="text" name="nome" id="inome" required maxlength="50" placeholder="Nome completo" autocomplete="name">
             </div>
-            <div id="formulario"><label for="icelular">Celular*</label>
-                <input type="number" name="celular" id="icelular" required maxlength="50" placeholder="(000) 00000-0000" autocomplete="mobile">
+            <div id="formulario"><label for="icelular">Celular (00)00000-0000*</label>
+                <input type="tel" name="celular" id="icelular" required maxlength="50" placeholder="(00)00000-0000" pattern="^\(\d{2}\)\d{4,5}-\d{4,5}$" autocomplete="mobile">
             </div>
             <div id="formulario"><label for="iemail">e-mail*</label>
                 <input type="email" name="email" id="iemail" required placeholder="seu_email@seu_mail.com" autocomplete="email">
@@ -28,22 +28,41 @@
             <div id="formulario"><label for="imunicipio">Município*</label>
                 <input type="text" name="municipio" id="imunicipio" required placeholder="Ex.: Porto Alegre">
             </div>
-            <div id="formulario"><label for="iatividade">Qual atividade que exerce ou pretender exercer*</label>
-                <input type="text" name="atividade" id="iatividade" required>
+            <div id="formulario">
+                <label for="iatividade">Qual atividade que exerce ou pretender exercer?*</label>
+                <select name="atividade" id="iatividade" required>
+                    <option value="" selected>---Escolha---</option>
+                    <option value="comercio">Comércio</option>
+                    <option value="industria">Indústria</option>
+                    <option value="serviço">Serviço</option>
+                    <option value="saude">Atividades da área da saúde</option>
+                    <option value="TI">TI</option>
+                    <option value="mei">MEI</option>
+                    <option value="Nlista">Minha atividade não está na lista</option>
+                </select>
             </div>
             <div id="formulario"><label for="imelhordia">Indique o melhor dia para conversar com um Contador</label>
                 <input type="date" name="melhordia" id="imelhordia">
             </div>
             <div id="formulario"><label for="imelhorhora">Indique o melhor horário</label>
-                <input type="time" name="melhorhora" id="imelhorhora" value="09:00">
+                <input type="time" name="melhorhora" id="imelhorhora" value="10:00">
             </div>
-            <div id="formulario"><label for="icontato">Como prefere o contato?</label>
-                <input type="checkbox" name="contato" id="icontato" required>
+            <div id="formulario">Como prefere o contato?
+                <div id="checkbox">
+                    <input type="checkbox" name="mensagem" id="imensagem"><label id="label" for="imensagem">  Mensagem de WhatsApp</label><br>
+                    <input type="checkbox" name="chamada" id="ichamada"><label id="label" for="ichamada">  Chamada de WhatsApp</label><br>
+                </div>
+                <div id="checkbox2">
+                    <input type="checkbox" name="video" id="ivideo" checked><label id="label" for="ivideo">  Vídeo de WhatsApp</label><br>
+                    <input type="checkbox" name="meet" id="imeet"><label id="label" for="imet">  Via Google Meet</label><br>
+                </div>
+                
             </div>
             <div id="enviar">
-                <div id="formulario"><input id="botao" type="submit" value=" Enviar "></div>
-                <div id="formulario"><input id="botao" type="reset" value=" Limpar "></div>
+                <div id="enviar2"><input id="botao" type="submit" value=" Enviar "></div>
+                <div id="enviar2"><input id="botao" type="reset" value=" Limpar "></div>
             </div>
+            
         </form>
     </main>
     

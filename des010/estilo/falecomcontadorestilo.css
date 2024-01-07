@@ -64,7 +64,8 @@ img {
 }
 
 form {
-    margin-top: 40px;
+    min-width: 510px;
+    margin-top: 35px;
     text-align: left;
     font-size: large(--fontedestaque);
     color: var(--corazul);
@@ -72,11 +73,15 @@ form {
 }
 
 #formulario {
-    margin: 20px 20px 30px 0px;
+    min-width: 510px;
+    margin: 15px 0px 30px 0px;
 }
 
 #enviar {
-    display: flex;
+    min-width: 300px;
+    max-width: 300px;
+    display:flex;
+    
 
 }
 
@@ -88,6 +93,7 @@ form {
     border: var(--corverde);
     min-width: 140px;
     min-height: 40px;
+    max-width: 150px;
     margin-left: 60px;
     border-radius: 5px;
 }
@@ -95,5 +101,34 @@ form {
 #botao:hover {
     background-color: var(--corazul);
     
+}
+
+#checkbox {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+}
+
+#checkbox2 {
+    display: flex;
+}
+
+#imensagem {
+    margin-left: 20px;
+}
+
+#ichamada {
+    margin-left: 42px;
+}
+
+#ivideo {
+    margin-left: 20px;
+}
+#imeet {
+    margin-left: 48px;
+}
+
+#label {
+    padding-left: 15px;
 }
 
