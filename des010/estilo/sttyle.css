@@ -287,7 +287,7 @@ a.contador {
     max-width: 230px; 
     height: 20px;
     background-color: var(--corbranco); 
-    font: MontSerrat-Mediun; 
+    font: var(--fontedestaque); 
     color: var(--corazul); 
     font-size: 18px;
     text-decoration: none;

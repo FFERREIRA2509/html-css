@@ -8,35 +8,45 @@
     <link rel="stylesheet" href="estilo/falecomcontadorestilo.css">
 </head>
 <body>
-    <div>
-        <h1>Fale com um Contador</h1>
-    </div>
-    <form action="falecomumcontador.py">
-        <p><label for="inome">Nome</label>
-            <input type="text" name="nome" id="inome">
-        </p>
-        <p><label for="icelular">Celular</label>
-            <input type="tel" name="celular" id="icelular">
-        </p>
-        <p><label for="iemail">E-mail</label>
-            <input type="email" name="email" id="iemail">
-        </p>
-        <p><label for="imunicipio">Município</label>
-            <input type="text" name="municipio" id="imunicipio">
-        </p>
-        <p><label for="iatividade">Indique a atividade que exerce ou pretender exercer</label>
-            <input type="text" name="atividade" id="iatividade">
-        </p>
-        <p><label for="imelhorhora">Indique o melhor horário para conversar com um Contador</label>
-            <input type="time" name="melhorhora" id="imelhorhora">
-        </p>
-        <p><label for="icontato">Como prefere o contato?</label>
-            <input type="checkbox" name="contato" id="icontato">
-        </p>
-        <p><input type="submit" value="Enviar"></p>
-        <p><input type="reset" value="Limpar"></p>
-
-    </form>
+    <main>
+        <div>
+            <h1>Fale com um Contador</h1>
+            <p id="orientação">Preencha os dados ao lado que em breve um dos nossos Contadores entrará em contato.</p>
+            <img src="contador.png" alt="Contador">
+        
+        </div>
+        <form action="falecomumcontador.py" autocomplete="on">
+            <div id="formulario"><label for="inome">Nome*</label>
+                <input type="text" name="nome" id="inome" required maxlength="50" placeholder="Nome completo" autocomplete="name">
+            </div>
+            <div id="formulario"><label for="icelular">Celular*</label>
+                <input type="number" name="celular" id="icelular" required maxlength="50" placeholder="(000) 00000-0000" autocomplete="mobile">
+            </div>
+            <div id="formulario"><label for="iemail">e-mail*</label>
+                <input type="email" name="email" id="iemail" required placeholder="seu_email@seu_mail.com" autocomplete="email">
+            </div>
+            <div id="formulario"><label for="imunicipio">Município*</label>
+                <input type="text" name="municipio" id="imunicipio" required placeholder="Ex.: Porto Alegre">
+            </div>
+            <div id="formulario"><label for="iatividade">Qual atividade que exerce ou pretender exercer*</label>
+                <input type="text" name="atividade" id="iatividade" required>
+            </div>
+            <div id="formulario"><label for="imelhordia">Indique o melhor dia para conversar com um Contador</label>
+                <input type="date" name="melhordia" id="imelhordia">
+            </div>
+            <div id="formulario"><label for="imelhorhora">Indique o melhor horário</label>
+                <input type="time" name="melhorhora" id="imelhorhora" value="09:00">
+            </div>
+            <div id="formulario"><label for="icontato">Como prefere o contato?</label>
+                <input type="checkbox" name="contato" id="icontato" required>
+            </div>
+            <div id="enviar">
+                <div id="formulario"><input id="botao" type="submit" value=" Enviar "></div>
+                <div id="formulario"><input id="botao" type="reset" value=" Limpar "></div>
+            </div>
+        </form>
+    </main>
+    
     
 </body>
 </html>

@@ -20,3 +20,80 @@
     margin: 0px;
     padding: 0px;
 }
+
+
+body {
+    margin: auto;
+    min-width: 450px;
+    max-width: 1000px;
+    min-height: 90px;
+    max-height: 650px;
+}
+
+
+
+main {
+    width: 100%;
+    display: inline-flex;
+
+}
+div {
+    max-width: 380px;
+    margin-right: 40px;
+   
+}
+
+h1 {
+    margin: 20px 40px 20px 0px;
+    padding-bottom: 10px;
+    text-align: left;
+    color: var(--corazul);
+    border-bottom: 1px solid var(--corverde);
+}
+#orientação {
+    font-size: var(--fontedestaque);
+    color: var(--corazul);
+}
+
+img {
+    margin-left: 30px;
+    margin-top: 30px;
+    align-items: center;
+    max-width: 300px;
+    box-shadow: 3px 3px 3px var(--cormarron);
+}
+
+form {
+    margin-top: 40px;
+    text-align: left;
+    font-size: large(--fontedestaque);
+    color: var(--corazul);
+
+}
+
+#formulario {
+    margin: 20px 20px 30px 0px;
+}
+
+#enviar {
+    display: flex;
+
+}
+
+#botao {
+    background-color: var(--corverde);
+    color: var(--corbranco);
+    font-size: 22px;
+    font-size: larger;
+    border: var(--corverde);
+    min-width: 140px;
+    min-height: 40px;
+    margin-left: 60px;
+    border-radius: 5px;
+}
+
+#botao:hover {
+    background-color: var(--corazul);
+    
+}
+
