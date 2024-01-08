@@ -471,6 +471,7 @@ ul.destaques2 {
 }
 
 #sobrenós {
+    min-height: 1180px;
     background-color: var(--corazul);
     color: var(--corbranco);
 }
@@ -538,7 +539,11 @@ ul.destaques2 {
     
 }
 
-
+#redessociais3 {
+    max-width: 40px;
+    max-height: 40px;
+   
+}
 
 li.redessociais {
     padding-top: 20px;
@@ -569,12 +574,52 @@ li.redessociais {
 
 }
 
-#mapa {
-    display: block;
+#whats {
+    display: flex;
     min-width: 640px;
     max-width: 640px;
-    min-height: 200px;
-    max-height: 200px;
+    min-height: 40px;
+    max-height: 40px;
+}
+
+#sobrenosparagrafowhats {
+    padding: 0px;
+    min-width: 200px;
+    margin-left: 104px;
+}
+
+#whats2 {
+    list-style-type: none;
+    min-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+}
+
+#whats3 {
+    margin-top: 25px;
+    min-width: 50px;
+    max-height: 40px;
+}
+
+#whats4 {
+    min-width: 40px;
+    min-height: 40px;
+}
+
+#logoredessociaiswhats {
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    border-radius: 20px;
+}
+
+#redessociais5 {
+    min-width: 92px;
+    max-width: 92px;
+    min-height: 120px;
+    max-height: 120px;
+    padding-right: 20px;
 }
 
 footer.f4 {
