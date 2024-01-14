@@ -632,3 +632,63 @@ footer.f4 {
     
 }
 
+/*ESTILO SERVIÇOS */
+#corposerviços {
+    min-height: 100vh;
+
+}
+
+#estiloserviços {
+    max-width: 80vw;
+    margin-left: 10vw;
+    
+}
+
+#estiloserviço1 {
+    background-color:var(--corverde);
+    min-height: 80vh;
+    min-width: 80vb;
+    display: flex; align-items: center; justify-content: center; 
+}
+
+#estiloserviço2 {
+    font-style: var(--fontepadrao);
+    color: var(--corbranco);
+    font-size: 38px;
+    text-align: center;
+    padding: 25px 5px 25px 8px;
+}
+
+#estiloserviço3 {
+    margin-top: 0px;
+    min-height: 50px;
+    font-size: 15px;
+    text-align: center;
+}
+
+#estiloserviço4 {
+    max-width: 85vw;
+    background-color:var(--corverde);
+}
+
+#passos {
+    font-style: var(--fontepadrao);
+    display: flex; align-items: center;
+    color: var(--corbranco);
+    background-color: #83a735;
+}
+#passo {
+    min-width: 270px;
+    margin-right: 5px;
+    border: 1px solid var(--corbranco);
+}
+
+#passo2 {
+    
+    text-decoration: underline;
+    text-align: center;
+    padding: 40px 0px 15px 0px;
+    color: var(--corbranco);
+}
+
+
