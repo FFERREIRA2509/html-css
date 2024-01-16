@@ -645,7 +645,7 @@ footer.f4 {
 }
 
 #estiloserviço1 {
-    background-color:var(--corverde);
+    background-color:var(--corazul);
     min-height: 80vh;
     min-width: 80vb;
     display: flex; align-items: center; justify-content: center; 
@@ -656,7 +656,10 @@ footer.f4 {
     color: var(--corbranco);
     font-size: 38px;
     text-align: center;
-    padding: 25px 5px 25px 8px;
+    padding: 25px 5px 10px 8px;
+    border-bottom: 2px solid var(--corverde);
+    max-width: 45vw;
+    margin: auto;
 }
 
 #estiloserviço3 {
@@ -668,27 +671,68 @@ footer.f4 {
 
 #estiloserviço4 {
     max-width: 85vw;
-    background-color:var(--corverde);
+    background-color:var(--corazul);
+    max-height: 7000px;
 }
 
+#estiloserviço5 {
+    min-height: 42px;
+    margin-bottom: 50px;
+    
+}
 #passos {
     font-style: var(--fontepadrao);
     display: flex; align-items: center;
     color: var(--corbranco);
-    background-color: #83a735;
+    background-color: var(--corazul);
+    max-height: 300px;
+
 }
 #passo {
     min-width: 270px;
+    min-height: 460px;
     margin-right: 5px;
-    border: 1px solid var(--corbranco);
+    border: 2px solid var(--corverde);
+    border-radius: 5px;
 }
 
 #passo2 {
-    
+    font-style: var(--fontepadrao);
     text-decoration: underline;
     text-align: center;
-    padding: 40px 0px 15px 0px;
+    padding: 30px 0px 5px 0px;
     color: var(--corbranco);
 }
 
+h2.passo3 {
+    font-style: var(--fontepadrao);
+}
+
+p.passo4 {
+    font-style: var(--fontepadrao);
+    padding: 0px 15px 0px 15px;
+    text-align: justify;
+    text-indent: 0px;
+}
+
+#passo5 {
+    margin-top: 23px;
+}
+
+#passo6 {
+    padding: 40px 5px 30px 5px;
+}
+
+#serviçocontabil {
+    display: flex; align-items: center; justify-content: center; 
+    background-image: url(../6898.jpg);
+    background-position: left top;
+    background-size: 100vw;
+}
+
+#serviçocontabil2 {
+    max-width: 75vh;
+    background-color: #20181554;
+    border: 2px solid red;
+}
 
