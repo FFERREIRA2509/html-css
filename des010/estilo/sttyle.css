@@ -725,14 +725,106 @@ p.passo4 {
 
 #serviçocontabil {
     display: flex; align-items: center; justify-content: center; 
-    background-image: url(../6898.jpg);
-    background-position: left top;
-    background-size: 100vw;
+    
 }
 
 #serviçocontabil2 {
-    max-width: 75vh;
-    background-color: #20181554;
-    border: 2px solid red;
+    align-items: center; 
+    color: var(--corazul);
+    font: var(--fontedestaque);
+    
+}
+
+#serviçocontabil3 {
+    font-size: 38px;
+    padding-top: 25px;
+    margin-left: 50px;
+    color: var(--corazul);
+    border-bottom: 2px solid var(--corverde);
+    max-width: 890px;
+}
+
+div.serviçocontabil4 {
+    padding-left: 50px;
+    display: flex; 
+    min-height: 300px;
+    
+}
+
+div.serviçocontabil5 {
+    font: var(--fontepadrao);
+    border-radius: 20px;
+    border: 2px solid var(--corverde);
+    max-width: 400px;
+    min-height: 240px;
+    max-height: 300px;
+    margin: 40px 20px 0px 20px;
+}
+
+div.serviçocontabil5 > p {
+    border-radius: 20px;
+    text-indent: 0px;
+    padding: 0px 30px 0px 30px;
+
+}
+
+div.serviçocontabil5 > h2 {
+    border-radius: 50px;
+    min-width: 400px;
+    max-width: 400px;
+    font-size: 25px;
+    text-align: center;
+
+}
+#serviçocontabil6 {
+    margin-top: 50px;
+    padding-left: 50px;
+}
+
+#falecomumcontador2 {
+    border: 1px solid var(--corbranco);
+    margin-left: 100px;
+    padding: 10px 10px 10px 10px;
+    max-width: 230px; 
+    height: 20px;
+    background-color: var(--cormarron); 
+    font: MontSerrat-Mediun; 
+    color: var(--corbranco); 
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#falecomumcontador2:hover {
+    background-color: var(--corverde);
+    color: var(--corazul);
+    border: 0.1px solid var(--corazul);
+}
+
+#façaumorçamento {
+    border: 1px solid var(--corbranco);
+    margin-left: 30px;
+    padding: 10px 10px 10px 10px;
+    max-width: 210px; 
+    height: 20px;
+    background-color: var(--cormarron); 
+    font: MontSerrat-Mediun; 
+    color: var(--corbranco); 
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+#façaumorçamento:hover {
+    background-color: var(--corverde);
+    color: var(--corazul);
+    border: 0.1px solid var(--corazul);
 }
 
