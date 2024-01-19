@@ -208,12 +208,7 @@ footer {
         }
 
 div.homeinicial{
-    display: flex;
-    align-items: stretch;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: flex-start;
-    justify-content: flex-start;
+    display: flex; align-items: top; justify-content: center;
 }
 
 
@@ -639,16 +634,17 @@ footer.f4 {
 }
 
 #estiloserviços {
-    max-width: 80vw;
-    margin-left: 10vw;
+   align-items: top;
+   margin: auto;
+   max-width: 1000px;
+   max-height: 500px;
     
 }
 
 #estiloserviço1 {
     background-color:var(--corazul);
-    min-height: 80vh;
-    min-width: 80vb;
-    display: flex; align-items: center; justify-content: center; 
+    display: flex; align-items: top; justify-content: center; 
+    min-height: 680px;
 }
 
 #estiloserviço2 {
@@ -672,25 +668,30 @@ footer.f4 {
 #estiloserviço4 {
     max-width: 85vw;
     background-color:var(--corazul);
-    max-height: 7000px;
+    max-height: 600px;
 }
 
 #estiloserviço5 {
     min-height: 42px;
-    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 30px;
     
 }
 #passos {
+    max-height: 450px;
+    min-height: 450px;
+    margin-top: 20px;
     font-style: var(--fontepadrao);
-    display: flex; align-items: center;
+    display: flex; 
     color: var(--corbranco);
     background-color: var(--corazul);
-    max-height: 300px;
+   
 
 }
 #passo {
     min-width: 270px;
-    min-height: 460px;
+    min-height: 450px;
+    max-height: 450px;
     margin-right: 5px;
     border: 2px solid var(--corverde);
     border-radius: 5px;
@@ -724,7 +725,8 @@ p.passo4 {
 }
 
 #serviçocontabil {
-    display: flex; align-items: center; justify-content: center; 
+    display: flex; align-items: top; justify-content: center;
+    min-height: 900px; 
     
 }
 
@@ -732,23 +734,28 @@ p.passo4 {
     align-items: center; 
     color: var(--corazul);
     font: var(--fontedestaque);
+    max-height: 800px;
     
 }
 
-#serviçocontabil3 {
+h1.serviçocontabil3 {
     font-size: 38px;
     padding-top: 25px;
     margin-left: 50px;
     color: var(--corazul);
-    border-bottom: 2px solid var(--corverde);
-    max-width: 890px;
+    border-bottom: 3px solid var(--corverde);
+    max-width: 870px;
+}
+
+#serviçocontabil3 {
+    max-width: 650px;
+    margin-left: 150px;
 }
 
 div.serviçocontabil4 {
     padding-left: 50px;
     display: flex; 
-    min-height: 300px;
-    
+    min-height: 300px; 
 }
 
 div.serviçocontabil5 {
@@ -826,5 +833,31 @@ div.serviçocontabil5 > h2 {
     background-color: var(--corverde);
     color: var(--corazul);
     border: 0.1px solid var(--corazul);
+}
+
+#consultoria {
+    width: 100%;
+    font: var(--fontepadrao);
+    color: var(--corbranco);
+    background-image: url(../6653.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 400px;
+    
+
+}
+
+#consultoria1 {
+    width: 80%;
+    padding-top: 40px;
+    margin: auto;
+    text-align: center;
+    max-width: 80vw;
+    min-height: 100px;
+    font-size: 38px;
+    color: var(--cormarron);
+    background-color: #ffffff7e;
+    
 }
 
