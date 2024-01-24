@@ -836,10 +836,9 @@ div.serviçocontabil5 > h2 {
 }
 
 #consultoria {
-    width: 100%;
     font: var(--fontepadrao);
     color: var(--corbranco);
-    background-image: url(../6653.jpg);
+    background-image: url(../6898.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -849,15 +848,166 @@ div.serviçocontabil5 > h2 {
 }
 
 #consultoria1 {
-    width: 80%;
-    padding-top: 40px;
-    margin: auto;
-    text-align: center;
-    max-width: 80vw;
+    border-radius: 10px;
+    max-width: 60vw;
     min-height: 100px;
-    font-size: 38px;
-    color: var(--cormarron);
-    background-color: #ffffff7e;
+    font-size: 70px;
+    text-shadow: white 1px 1px 1.5px;
+    color: white;
+    
     
 }
 
+#consultoria2 {
+    display: flex;
+    align-items: center;
+}
+
+#consultoria3 {
+    margin: auto;
+    display: flex;
+    align-items: top; justify-content: center;
+}
+
+#consultoria4 {
+    font-size: 48px;
+    text-align: left;
+    color: var(--corazul);
+    padding: 5px 5px 5px 8px;
+ }
+
+ #consultoria5 {
+    margin-bottom: 39px;
+    margin-top: 35px;
+    font-family: var(--fontepadrao);
+    font-size: 20px;
+    text-align: justify;
+    color: var(--corazul);
+    list-style-type: '\2714\000A0\000A0\000A0\000A0';
+    list-style-position: inside;
+}
+
+
+#meta {
+    margin-bottom: 90px;
+    border: 0.5px solid  #003c5e1e;
+    box-shadow: 0.5px 0.5px 0.5px var(--corazul);
+    min-width: 420px;
+    max-width: 420px;
+    max-height: 280px;
+    min-height: 280px;
+    margin-top: 150px;
+    margin-left: 20px;
+    padding-bottom: 0px;
+}
+
+#custo2 {
+    border: 0.5px solid #003c5e1e;
+    box-shadow: 0.5px 0.5px 0.5px var(--corazul);
+    min-width: 420px;
+    max-width: 420px;
+    max-height: 280px;
+    min-height: 280px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    margin-left: 70px;
+    padding-bottom: 0px;
+
+}
+
+#consultoria6 {
+    margin-top: 30px;
+    max-width: 650px;
+    min-width: 600px;
+ }
+
+ #orçamento {
+    border: 1px solid var(--corbranco);
+    margin-left: 10px;
+    padding: 10px 10px 10px 10px;
+    max-height: 20px;
+    background-color: var(--corverde); 
+    font: MontSerrat-Mediun; 
+    color: var(--corbranco); 
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+#orçamento:hover {
+    background-color: var(--corazul);
+    color: var(--corbranco);
+    border: 0.1px solid var(--corazul);
+}
+
+#orçamento2 {
+    margin-left: 130px;
+    padding: 10px 10px 10px 10px;
+    background-color: var(--corverde); 
+    font: MontSerrat-Mediun; 
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    color: var(--corbranco);
+    border-radius: 5px;
+    border: 0.1px solid var(--corbranco); 
+}
+
+#orçamento2:hover {
+    background-color: var(--corazul);
+    color: var(--corbranco);
+    border: 0.1px solid var(--corazul);
+    
+}
+
+#orçamento3 {
+    margin-top: 100px;
+    margin-left: 130px;
+    padding: 10px 10px 10px 10px;
+    background-color: var(--corverde); 
+    font: MontSerrat-Mediun; 
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    color: var(--corbranco);
+    border-radius: 5px;
+    border: 0.1px solid var(--corbranco); 
+}
+
+#orçamento3:hover {
+    background-color: var(--corazul);
+    color: var(--corbranco);
+    border: 0.1px solid var(--corazul);
+    
+}
+
+#falecomumcontador3 {
+    border: 1px solid var(--corbranco);
+    margin-left: 100px;
+    padding: 10px 10px 10px 10px;
+    max-width: 230px; 
+    height: 20px;
+    background-color:var(--corverde); 
+    font: MontSerrat-Mediun; 
+    color: var(--corbranco); 
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#falecomumcontador3:hover {
+    background-color: var(--corazul);
+    color: var(--corbranco);
+    border: 0.1px solid var(--corazul);
+}
