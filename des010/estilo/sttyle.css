@@ -1075,12 +1075,6 @@ div.serviçocontabil5 > h2 {
     max-height: 600px;
 }
 
-#estiloserviço5 {
-    min-height: 42px;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    
-}
 #renda6 {
     max-height: 450px;
     min-height: 450px;
@@ -1173,3 +1167,73 @@ p.passo4 {
     color: var(--corazul);
     border: 0.1px solid var(--corazul);
 }
+
+#renda13 {
+    background-color: var(--corverde);
+    color: var(--corbranco);
+    
+    
+}
+
+#renda14 {
+    margin: auto;
+    align-items: top; justify-content: center;
+    margin-top: 30px;
+    padding-top: 30px;
+    width: 75vw;
+    display: flex;
+ }
+
+#renda15 {
+    font-size: 48px;
+    text-align: center;
+    padding: 5px 5px 5px 8px;
+ }
+
+#renda16 {
+    display: inline;
+    
+
+}
+
+ #consultoria5 {
+    margin-bottom: 39px;
+    margin-top: 35px;
+    font-family: var(--fontepadrao);
+    font-size: 20px;
+    text-align: justify;
+    color: var(--corazul);
+    list-style-type: '\2714\000A0\000A0\000A0\000A0';
+    list-style-position: inside;
+}
+
+
+#meta {
+    margin-bottom: 90px;
+    border: 0.5px solid  #003c5e1e;
+    box-shadow: 0.5px 0.5px 0.5px var(--corazul);
+    min-width: 420px;
+    max-width: 420px;
+    max-height: 280px;
+    min-height: 280px;
+    margin-top: 150px;
+    margin-left: 20px;
+    padding-bottom: 0px;
+}
+
+#custo2 {
+    border: 0.5px solid #003c5e1e;
+    box-shadow: 0.5px 0.5px 0.5px var(--corazul);
+    min-width: 420px;
+    max-width: 420px;
+    max-height: 280px;
+    min-height: 280px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    margin-left: 70px;
+    padding-bottom: 0px;
+
+}
+
+
+
