@@ -1123,7 +1123,7 @@ p.passo4 {
 
 #renda11 {
     border: 1px solid var(--corbranco);
-    
+    margin-left: 30px;
     padding: 10px 10px 10px 10px;
     max-width: 210px; 
     height: 20px;
@@ -1147,11 +1147,10 @@ p.passo4 {
 
 #renda12 {
     border: 1px solid var(--corbranco);
-    
+    margin-left: 100px;
     padding: 10px 10px 10px 10px;
     max-width: 230px; 
-    min-height: 120px;
-    max-height: 120px;
+    height: 20px;
     background-color: var(--corazul); 
     font: MontSerrat-Mediun; 
     color: var(--corbranco); 
@@ -1191,60 +1190,75 @@ p.passo4 {
     padding: 5px 5px 5px 8px;
  }
 
-#renda16 {
-   
-    justify-content: center;
-    align-items: center; 
-    margin-left: 40px;
-    
-
-}
+ #renda16 {
+    display: block;
+ }
 
 div.renda17 {
+    margin-top: 30px;
+}
+
+ #renda18 {
     border: 1px solid var(--corbranco);
-    max-height: 250px;
-    min-height: 250px;
-    min-width: 250px;
+    padding: 10px 10px 10px 10px;
+    max-width: 320px; 
+    min-width: 320px;
+    height: 20px;
+    background-color: var(--corverde); 
+    font: MontSerrat-Mediun; 
+    color: var(--corbranco); 
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+
 }
 
- #consultoria5 {
-    margin-bottom: 39px;
-    margin-top: 35px;
-    font-family: var(--fontepadrao);
-    font-size: 20px;
-    text-align: justify;
-    color: var(--corazul);
-    list-style-type: '\2714\000A0\000A0\000A0\000A0';
-    list-style-position: inside;
+#renda18:hover {
+    background-color: var(--corazul);
+    color: var(--corbranco);
+    border: 0.1px solid var(--corazul);
 }
 
+#renda19 {
+    border: 1px solid var(--corbranco);
+    padding: 10px 40px 10px 40px;
+    max-width: 320px; 
+    min-width: 320px;
+    height: 20px;
+    background-color: var(--corverde); 
+    font: MontSerrat-Mediun; 
+    color: var(--corbranco); 
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+}
 
-#meta {
-    margin-bottom: 90px;
-    border: 0.5px solid  #003c5e1e;
-    box-shadow: 0.5px 0.5px 0.5px var(--corazul);
-    min-width: 420px;
-    max-width: 420px;
-    max-height: 280px;
-    min-height: 280px;
+#renda19:hover {
+    background-color: var(--corazul);
+    color: var(--corbranco);
+    border: 0.1px solid var(--corazul);
+}
+
+#renda20 {
+    margin-top: 200px;
+    margin-left: 50px;
+    min-width: 320px;
+    max-width: 320px;
+    max-height: 40px;
+    min-height: 40px;
+}
+
+#renda21 {
     margin-top: 150px;
-    margin-left: 20px;
-    padding-bottom: 0px;
+    margin-left: 50px;
+    min-width: 320px;
+    max-width: 320px;
+    max-height: 40px;
+    min-height: 40px;
 }
-
-#custo2 {
-    border: 0.5px solid #003c5e1e;
-    box-shadow: 0.5px 0.5px 0.5px var(--corazul);
-    min-width: 420px;
-    max-width: 420px;
-    max-height: 280px;
-    min-height: 280px;
-    margin-top: 90px;
-    margin-bottom: 90px;
-    margin-left: 70px;
-    padding-bottom: 0px;
-
-}
-
-
-
