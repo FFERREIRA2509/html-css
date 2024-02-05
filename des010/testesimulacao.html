@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Fazer Simulação</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/falecomcontadorestilo.css">
+</head>
+<body>
+    <main>
+        
+        <form action="falecomumcontador.py" autocomplete="on">
+           
+            <h1>Responda as perguntas abaixo e ao final do questionário o sistema calculará seu orçamento.</h1>
+            <div id="formulario"> <strong>Você enviou sua Declaração de Imposto de Renda no ano de 2023?*</strong>
+                <div id="checkbox">
+                    <input class="simulacao1" type="radio" name="irfez" id="info1" value="20"><label id="label" for="info1">  Sim</label><br>
+                    <input class="simulacao2" type="radio" name="irfez" id="info2" value="50"><label id="label" for="ichamada">  Não</label><br>
+                </div>
+            </div>
+            <div id="formulario"> <strong>No ano de 2023 houve alteração dos cadastrais, como por exemplo, endereço, alteração no nome, etc.?*</strong>
+                <div id="checkbox">
+                    <input class="simulacao1" type="radio" name="irfez" id="info3" value="30"><label id="label" for="imensagem">  Sim</label><br>
+                    <input class="simulacao2" type="radio" name="irfez" id="info4"><label id="label" for="ichamada">  Não</label><br>
+                </div>
+            </div>
+            <div id="formulario"> <strong>Possui cônjuge?*</strong>
+                <div id="checkbox">
+                    <input class="simulacao1" type="radio" name="irfez" id="info5"><label id="label" for="imensagem">  Sim</label><br>
+                    <input class="simulacao2" type="radio" name="irfez" id="info6"><label id="label" for="ichamada">  Não</label><br>
+                </div>
+            </div>
+            <div id="formulario"> <strong>Possui dependentes?*</strong>
+                <div id="checkbox">
+                    <input class="simulacao1" type="number" name="irfez" id="info7"><label id="label" for="imensagem"> </label><br>
+                </div>
+            </div>
+            <div id="formulario"> <strong>Quantas contas bancárias você possui?*</strong>
+                <div id="checkbox">
+                    <input class="simulacao1" type="number" name="irfez" id="info8"><label id="label" for="imensagem"> </label><br>
+                </div>
+            </div>
+            <div id="formulario"> <strong>Quantas rendas você possui?*</strong>
+                <div id="checkbox">
+                    <input class="simulacao1" type="number" name="irfez" id="info9"><label id="label" for="imensagem"> </label><br>
+                </div>
+            </div>
+
+            <div id="formulario"><strong>Selecione as suas fontes de renda:</strong>
+                <div id="checkbox">
+                    <input class="simulacao1" type="checkbox" name="mensagem" id="info10"><label id="label" for="imensagem">  Empregado de empresa pública ou privada</label><br>
+                    <input class="simulacao2" type="checkbox" name="chamada" id="info11"><label id="label" for="ichamada">  MEI - Micro empreendedor individual</label><br>
+                </div>
+                <div id="checkbox2">
+                    <input class="simulacao1" type="checkbox" name="video" id="info12"><label id="label" for="ivideo">  Autônomo ou Profissional Liberal</label><br>
+                    <input class="simulacao2" type="checkbox" name="meet" id="info13"><label id="label" for="imet">  Aluguel</label><br>
+                </div>
+                <div id="checkbox">
+                    <input class="simulacao1" type="checkbox" name="mensagem" id="info14"><label id="label" for="imensagem">  Atividade Rural</label><br>
+                    <input class="simulacao2" type="checkbox" name="chamada" id="info15"><label id="label" for="ichamada">  Pensionista</label><br>
+                </div>
+                <div id="checkbox2">
+                    <input class="simulacao1" type="checkbox" name="video" id="info16"><label id="label" for="ivideo">  Previdência Complementar</label><br>
+                    <input class="simulacao2" type="checkbox" name="meet" id="info17"><label id="label" for="imet">  Lucros e dividendos</label><br>
+                </div>
+                <div id="checkbox">
+                    <input class="simulacao1" type="checkbox" name="mensagem" id="info18"><label id="label" for="imensagem">  Pró-labore</label><br>
+                    <input class="simulacao2" type="checkbox" name="chamada" id="info19"><label id="label" for="ichamada">  Rendimentos recebidos do exterior</label><br>
+                </div>
+                <div id="checkbox">
+                    <input class="simulacao1" type="checkbox" name="mensagem" id="info20"><label id="label" for="imensagem">  Rendimentos Recebidos Acumuladamente</label><br>
+                    <input class="simulacao2" type="checkbox" name="chamada" id="info21"><label id="label" for="ichamada">  Outras</label><br>
+                </div>
+                
+            </div>
+
+
+
+            <div id="formulario"><strong>Selecione as despesas referente ao ano 2023:</strong>
+                <div id="checkbox">
+                    <input class="simulacao1" type="checkbox" name="mensagem" id="info22"><label id="label" for="imensagem">  Despesas Médicas</label><br>
+                    <input class="simulacao2" type="checkbox" name="chamada" id="info23"><label id="label" for="ichamada">  Despesas com instrução</label><br>
+                </div>
+                <div id="checkbox2">
+                    <input class="simulacao1" type="checkbox" name="video" id="info24"><label id="label" for="ivideo">  Pensão alimentícia</label><br>
+                    <input class="simulacao2" type="checkbox" name="meet" id="info25"><label id="label" for="imet">  Previdência complementar</label><br>
+                </div>
+                <div id="checkbox2">
+                    <input class="simulacao1" type="checkbox" name="video" id="info26"><label id="label" for="ivideo">  Doações</label><br>
+                    <input class="simulacao2" type="checkbox" name="meet" id="info27"><label id="label" for="imet"> Outras</label><br>
+                </div>
+                
+            </div>
+
+            <div id="formulario"><strong>Selecione seus bens e direitos:</strong>
+                <div id="checkbox">
+                    <input class="simulacao1" type="checkbox" name="mensagem" id="info28"><label id="label" for="imensagem">  Imóvel</label><br>
+                    <input class="simulacao2" type="checkbox" name="chamada" id="info29"><label id="label" for="ichamada">  Veículo</label><br>
+                </div>
+                <div id="checkbox2">
+                    <input class="simulacao1" type="checkbox" name="video" id="info30"><label id="label" for="ivideo">  Aplicações Financeiras</label><br>
+                    <input class="simulacao2" type="checkbox" name="meet" id="info31"><label id="label" for="imet">  Ações ou fundos de investimento</label><br>
+                </div>
+                <div id="checkbox2">
+                    <input class="simulacao1" type="checkbox" name="video" id="info32"><label id="label" for="ivideo">  Criptoativos</label><br>
+                    <input class="simulacao2" type="checkbox" name="meet" id="info33"><label id="label" for="imet"> Participação societária</label><br>
+                </div>
+                <div id="checkbox2">
+                    <input class="simulacao1" type="checkbox" name="video" id="info34"><label id="label" for="ivideo">  Ouro</label><br>
+                    <input class="simulacao2" type="checkbox" name="meet" id="info35"><label id="label" for="imet"> Outros</label><br>
+                </div>
+            </div>
+
+            <div id="formulario"> <strong>Possui dívidas acima de R$ 5.000,00?* (Exceto consórcios e financiamnetos do Sistema Financeiro da Habitação</strong>)
+                <div id="checkbox">
+                    <input class="simulacao1" type="radio" name="irfez" id="info36"><label id="label" for="imensagem">  Sim</label><br>
+                    <input class="simulacao2" type="radio" name="irfez" id="info37"><label id="label" for="ichamada">  Não</label><br>
+                </div>
+            </div>
+            <div class="simulacao2" onclick="enviar()">
+            
+            <strong>ORÇAMENTO: </strong></div>
+
+            <div class="simulacao2" id="info38"><p>Orçamento</p>
+
+            </div>
+            <div id="enviar">
+                <div id="enviar2"><input id="botao" type="submit" value=" Enviar "></div>
+                <div id="enviar2"><input id="botao" type="reset" value=" Limpar "></div>
+            </div>
+            <script src="scriptsimulacao.js"></script>
+            
+        </form>
+    </main>
+
+
+    
+</body>
+</html>

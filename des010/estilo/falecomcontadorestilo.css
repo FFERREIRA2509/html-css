@@ -132,3 +132,21 @@ form {
     padding-left: 15px;
 }
 
+
+
+/*SIMULAÇÃO*/
+
+input.simulacao1 {
+    margin-left: 20px;
+}
+
+
+input.simulacao2 {
+    margin-left: 42px;
+}
+
+div.simulacao2 {
+    min-width: 510px;
+    margin: 15px 0px 30px 0px;
+}
+
