@@ -12,7 +12,7 @@
         
         <form action="falecomumcontador.py" autocomplete="on">
            
-            <h1>Responda as perguntas abaixo e ao final do questionário o sistema calculará seu orçamento.</h1>
+            <h1>Responda as perguntas abaixo e ao final do questionário o sistema calculará sua <strong>SIMULAÇÃO</strong>.</h1>
             <div id="formulario"> <strong>Você enviou sua Declaração de Imposto de Renda no ano de 2023?*</strong>
                 <div id="checkbox">
                     <input class="simulacao1" type="radio" name="irfez" id="info1" value="20"><label id="label" for="info1">  Sim</label><br>
@@ -21,32 +21,27 @@
             </div>
             <div id="formulario"> <strong>No ano de 2023 houve alteração dos cadastrais, como por exemplo, endereço, alteração no nome, etc.?*</strong>
                 <div id="checkbox">
-                    <input class="simulacao1" type="radio" name="irfez" id="info3" value="30"><label id="label" for="imensagem">  Sim</label><br>
-                    <input class="simulacao2" type="radio" name="irfez" id="info4"><label id="label" for="ichamada">  Não</label><br>
+                    <input class="simulacao1" type="radio" name="irfez1" id="info3" value="30"><label id="label" for="imensagem">  Sim</label><br>
+                    <input class="simulacao2" type="radio" name="irfez1" id="info4"><label id="label" for="ichamada">  Não</label><br>
                 </div>
             </div>
             <div id="formulario"> <strong>Possui cônjuge?*</strong>
                 <div id="checkbox">
-                    <input class="simulacao1" type="radio" name="irfez" id="info5"><label id="label" for="imensagem">  Sim</label><br>
-                    <input class="simulacao2" type="radio" name="irfez" id="info6"><label id="label" for="ichamada">  Não</label><br>
+                    <input class="simulacao1" type="radio" name="irfez2" id="info5"><label id="label" for="imensagem">  Sim</label><br>
+                    <input class="simulacao2" type="radio" name="irfez2" id="info6"><label id="label" for="ichamada">  Não</label><br>
                 </div>
             </div>
             <div id="formulario"> <strong>Possui dependentes?*</strong>
                 <div id="checkbox">
-                    <input class="simulacao1" type="number" name="irfez" id="info7"><label id="label" for="imensagem"> </label><br>
+                    <input class="simulacao1" type="number" name="irfez" id="info7" min="0"><label id="label" for="imensagem"> </label><br>
                 </div>
             </div>
             <div id="formulario"> <strong>Quantas contas bancárias você possui?*</strong>
                 <div id="checkbox">
-                    <input class="simulacao1" type="number" name="irfez" id="info8"><label id="label" for="imensagem"> </label><br>
+                    <input class="simulacao1" type="number" name="irfez" id="info8" min="0"><label id="label" for="imensagem"> </label><br>
                 </div>
             </div>
-            <div id="formulario"> <strong>Quantas rendas você possui?*</strong>
-                <div id="checkbox">
-                    <input class="simulacao1" type="number" name="irfez" id="info9"><label id="label" for="imensagem"> </label><br>
-                </div>
-            </div>
-
+            
             <div id="formulario"><strong>Selecione as suas fontes de renda:</strong>
                 <div id="checkbox">
                     <input class="simulacao1" type="checkbox" name="mensagem" id="info10"><label id="label" for="imensagem">  Empregado de empresa pública ou privada</label><br>
@@ -120,9 +115,9 @@
             </div>
             <div class="simulacao2" onclick="enviar()">
             
-            <strong>ORÇAMENTO: </strong></div>
+            <strong>SIMULAÇÃO <br> Para fazer a sua Declaração de Imposto de Renda com nossos especialistas você pagará R$: </strong></div>
 
-            <div class="simulacao2" id="info38"><p>Orçamento</p>
+            <div class="simulacao2" id="info38"><p>O resultado da sua simulação aparecerá aqui.</p>
 
             </div>
             <div id="enviar">
