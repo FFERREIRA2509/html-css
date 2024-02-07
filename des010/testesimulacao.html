@@ -6,6 +6,7 @@
     <title>Teste Fazer Simulação</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilo/falecomcontadorestilo.css">
+    <script defer src="scriptsimulacao.js"></script>
 </head>
 <body>
     <main>
@@ -117,7 +118,7 @@
             <div class="simulacao2" onclick="enviar()">
             <strong>SIMULAÇÃO <br> Para fazer a sua Declaração de Imposto de Renda com nossos especialistas você pagará R$: </strong></div>
 
-            <div type="submit" class="simulacao2" id="info38"><button>O resultado da sua simulação aparecerá aqui.</button>
+            <div class="simulacao2" id="info38"><button type="submit" data-button onclick="click">O resultado da sua simulação aparecerá aqui.</button>
             </div>
 
             <div id="enviar">
@@ -125,7 +126,7 @@
                 <div id="enviar2"><input id="botao" type="reset" value=" Limpar "></div>
             </div>
 
-            <script src="scriptsimulacao.js"></script>
+            
             
         </form>
     </main>
