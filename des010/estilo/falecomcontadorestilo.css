@@ -166,3 +166,8 @@ div.simulacao2 {
 #info38:hover {
     background-color: var(--corazul);
 }
+
+button:disabled {
+    cursor: not-allowed;
+    background: #7e898f;
+}
