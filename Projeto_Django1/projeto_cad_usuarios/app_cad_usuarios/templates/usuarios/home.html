@@ -17,7 +17,7 @@
         
         </div>
         <form type="email" action="{% url 'listagem_usuarios' %}" method="post" autocomplete="on" data-form name="email">
-            {% {% csrf_token %}%}
+            {% csrf_token %}
             <div id="formulario"><label for="inome">Nome*</label>
                 <input type="text" name="nome" id="inome" required maxlength="50" placeholder="Nome completo" autocomplete="name">
             </div>

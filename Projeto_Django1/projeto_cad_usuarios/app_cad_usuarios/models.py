@@ -3,7 +3,7 @@ from django.db import models
 class Usuario(models.Model):
     id_usuario = models.AutoField(primary_key=True)
     nome = models.TextField(max_length=255)
-    celular = models.IntegerField()
+    celular = models.TextField()
     email = models.EmailField()
     enviou_declaracao = models.CharField(max_length=5)
     alteracao_cadastral = models.CharField(max_length=5)

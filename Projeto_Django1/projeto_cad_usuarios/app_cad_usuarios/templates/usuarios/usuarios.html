@@ -1,7 +1,82 @@
 <div class="container">
     <table>
         <tr>
-            
+            <th>id</th>
+            <th>nome</th>
+            <th>celular</th>
+            <th>email</th>
+            <th>enviou_declaracao</th>
+            <th>alteracao_cadastral</th>
+            <th>conjuge</th>
+            <th>dependentes</th>
+            <th>conta_banco</th>
+            <th>empregado</th>
+            <th>mei</th>
+            <th>autonomo</th>
+            <th>aluguel</th>
+            <th>rural</th>
+            <th>pensionista</th>
+            <th>previdencia</th>
+            <th>dividendos</th>
+            <th>prolabore</th>
+            <th>exterior</th>
+            <th>rra</th>
+            <th>outras</th>
+            <th>despesasmedicas</th>
+            <th>instrucao</th>
+            <th>pa</th>
+            <th>pc</th>
+            <th>doacoes</th>
+            <th>outrasdespesas</th>
+            <th>imovel</th>
+            <th>veiculo</th>
+            <th>aplicacaofinan</th>
+            <th>acoes</th>
+            <th>criptoativos</th>
+            <th>participacaosoci</th>
+            <th>ouro</th>
+            <th>outrosbens</th>
+            <th>dividas</th>
         </tr>
+        {% for usuario in usuarios %}
+        <tr>
+            <th>{{usuario.id_usuario}}</th>
+            <th>{{usuario.nome}}</th>
+            <th>{{usuario.celular}}</th>
+            <th>{{usuario.email}}</th>
+            <th>{{usuario.enviou_declaracao}}</th>
+            <th>{{usuario.alteracao_cadastral}}</th>
+            <th>{{usuario.conjuge}}</th>
+            <th>{{usuario.dependentes}}</th>
+            <th>{{usuario.conta_banco}}</th>
+            <th>{{usuario.empregado}}</th>
+            <th>{{usuario.mei}}</th>
+            <th>{{usuario.autonomo}}</th>
+            <th>{{usuario.aluguel}}</th>
+            <th>{{usuario.rural}}</th>
+            <th>{{usuario.pensionista}}</th>
+            <th>{{usuario.previdencia}}</th>
+            <th>{{usuario.dividendos}}</th>
+            <th>{{usuario.prolabore}}</th>
+            <th>{{usuario.exterior}}</th>
+            <th>{{usuario.rra}}</th>
+            <th>{{usuario.outras}}</th>
+            <th>{{usuario.despesasmedicas}}</th>
+            <th>{{usuario.instrucao}}</th>
+            <th>{{usuario.pa}}</th>
+            <th>{{usuario.pc}}</th>
+            <th>{{usuario.doacoes}}</th>
+            <th>{{usuario.outrasdespesas}}</th>
+            <th>{{usuario.imovel}}</th>
+            <th>{{usuario.veiculo}}</th>
+            <th>{{usuario.aplicacaofinan}}</th>
+            <th>{{usuario.acoes}}</th>
+            <th>{{usuario.criptoativos}}</th>
+            <th>{{usuario.participacaosoci}}</th>
+            <th>{{usuario.ouro}}</th>
+            <th>{{usuario.outrosbens}}</th>
+            <th>{{usuario.dividas}}</th>
+        </tr>
+        {% {% endfor %} %}
     </table>
 </div>
