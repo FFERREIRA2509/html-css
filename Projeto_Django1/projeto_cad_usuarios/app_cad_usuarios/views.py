@@ -10,7 +10,7 @@ def usuarios(request):
     novo_usuario.nome = request.POST.get('nome')
     novo_usuario.celular = request.POST.get('celular')
     novo_usuario.email = request.POST.get('email')
-    novo_usuario.enviou_declaracao = request.POST.get('enviou_declracao')
+    novo_usuario.enviou_declaracao = request.POST.get('enviou_declaracao')
     novo_usuario.alteracao_cadastral = request.POST.get('alteracao_cadastral')
     novo_usuario.conjuge = request.POST.get('conjuge')
     novo_usuario.dependentes = request.POST.get('dependentes')
