@@ -171,5 +171,8 @@ function enviar() {
     
 }
 
+//<div class="simulacao2">
+//<strong>SIMULAÇÃO <br> Para fazer a sua Declaração de Imposto de Renda com nossos especialistas você pagará R$: </strong></div>
+
 
 
