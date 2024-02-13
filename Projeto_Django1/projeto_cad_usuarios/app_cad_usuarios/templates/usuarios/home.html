@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -5,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fazer Simulação</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="falecomcontadorestilo.css">
+    <link rel="stylesheet" href="{% static 'falecomcontadorestilo.css' %}">
+    
     
 </head>
 <body>
@@ -13,7 +15,7 @@
         <div>
             <h1>Serviços de qualidade, honorário justo!</h1>
             <p id="orientação">Preencha os dados e faça uma simulação de quanto você pagaria de honorários para ter sua declaração feita por nós!</p>
-            <img src="contador.png" alt="Contador">
+            <img src="{% static 'app_cad_usuarios\media\contador.png' %}" alt="Contador">
         
         </div>
         <form action="falecomumcontador.py" autocomplete="on">
