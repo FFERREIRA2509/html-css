@@ -164,7 +164,7 @@ const formSubmit = new FormSubmit({
 
 
 */
-CÁLCULO DA SIMULAÇÃO:
+//CÁLCULO DA SIMULAÇÃO:
 
 function enviar() {
     var checkboxinfo0 = window.document.querySelector("#info1");
