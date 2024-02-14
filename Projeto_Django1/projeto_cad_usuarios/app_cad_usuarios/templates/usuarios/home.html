@@ -7,6 +7,7 @@
     <title>Fazer Simulação</title>
     <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
     <link rel="stylesheet" href="{% static 'falecomcontadorestilo.css' %}">
+    <script type="text/javascript" src="{% static 'js/scriptsimulacao.js' %}"></script>
 </head>
 <body>
     <main>
@@ -33,8 +34,8 @@
             <h1>Responda as perguntas abaixo e ao final do questionário o sistema calculará sua <strong>SIMULAÇÃO</strong>.</h1>
             <div id="formulario"> <strong>Você enviou sua Declaração de Imposto de Renda no ano de 2023?*</strong>
                 <div id="checkbox">
-                    <input class="simulacao1" type="radio" name="enviou_declaracao" id="info1" value="20"><label id="label" for="info1">  Sim</label><br>
-                    <input class="simulacao2" type="radio" name="enviou_declaracao" id="info2" value="50"><label id="label" for="info2">  Não</label><br>
+                    <input class="simulacao1" type="radio" name="enviou_declaracao" id="info1" ><label id="label" for="info1">  Sim</label><br>
+                    <input class="simulacao2" type="radio" name="enviou_declaracao" id="info2" ><label id="label" for="info2">  Não</label><br>
                 </div>
             </div>
             <div id="formulario"> <strong>No ano de 2023 houve alteração dos cadastrais, como por exemplo, endereço, alteração no nome, etc.?*</strong>
@@ -62,8 +63,8 @@
             
             <div id="formulario"><strong>Selecione as suas fontes de renda:</strong>
                 <div id="checkbox">
-                    <input class="simulacao1" type="checkbox" name="empregado" id="info10"><label id="label" for="info10">  Empregado de empresa pública ou privada</label><br>
-                    <input class="simulacao2" type="checkbox" name="mei" id="info11"><label id="label" for="info11">  MEI - Micro empreendedor individual</label><br>
+                    <input blank=True null=True class="simulacao1" type="checkbox" name="empregado" id="info10"><label id="label" for="info10">  Empregado de empresa pública ou privada</label><br>
+                    <input blank=True class="simulacao2" type="checkbox" name="mei" id="info11"><label id="label" for="info11">  MEI - Micro empreendedor individual</label><br>
                 </div>
                 <div id="checkbox2">
                     <input class="simulacao1" type="checkbox" name="autonomo" id="info12"><label id="label" for="info12">  Autônomo ou Profissional Liberal</label><br>
@@ -128,17 +129,12 @@
                     <input class="simulacao2" type="radio" name="dividas" id="info37"><label id="label" for="info37">  Não</label><br>
                 </div>
             </div>
+            <script type="text/javascript" src="{% static 'js/scriptsimulacao.js' %}"></script>
+    
+            <div class="simulacao2" onclick="click" enviar() id="info38">Calcular</div>
 
+            <button class="form-control-sm" data-button onclick="click">Calcular Simulação.</button>
             
-
-            <div enviar() class="simulacao2" id="info38"><button class="form-control-sm" data-button onclick="click">Calcular Simulação.</button>
-            </div>
-            <!--
-            <div id="enviar">
-                <div id="enviar2"><input id="botao" type="submit" value=" Enviar " data-button></div>
-                <div id="enviar2"><input id="botao" type="reset" value=" Limpar "></div>
-            </div>
-            -->
             
         </form>
     </main>

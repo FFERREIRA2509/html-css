@@ -88,12 +88,22 @@ function enviar() {
 }
 
 
-CÁLCULO DA SIMULAÇÃO:
+
 
 
 
 */
 
+//CÁLCULO DA SIMULAÇÃO:
+
+function enviar() {
+    var html = 'teste';
+    
+    document.querySelector('#info38').innerTEXT=html
+    
+}
+
+/*
 function enviar() {
     var checkboxinfo0 = window.document.querySelector("#info1");
     var checkboxinfo1 = window.document.querySelector("#info2");
@@ -165,14 +175,13 @@ function enviar() {
 
     var totalgeral = total+total2 
 
-
-
-    document.querySelector('#info38').innerHTML=totalgeral
+    return document.querySelector('#info38').innerHTML=html
     
 }
 
 //<div class="simulacao2">
 //<strong>SIMULAÇÃO <br> Para fazer a sua Declaração de Imposto de Renda com nossos especialistas você pagará R$: </strong></div>
 
+*/
 
 

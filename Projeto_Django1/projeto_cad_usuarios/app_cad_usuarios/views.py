@@ -16,7 +16,7 @@ def usuarios(request):
     novo_usuario.dependentes = request.POST.get('dependentes')
     novo_usuario.conta_banco = request.POST.get('conta_banco')
     novo_usuario.empregado = request.POST.get('empregado')
-    novo_usuario.mei = request.POST.get('mei')
+    novo_usuario.mei = request.POST.get("mei")
     novo_usuario.autonomo = request.POST.get('autonomo')
     novo_usuario.aluguel = request.POST.get('aluguel')
     novo_usuario.rural = request.POST.get('rural')
