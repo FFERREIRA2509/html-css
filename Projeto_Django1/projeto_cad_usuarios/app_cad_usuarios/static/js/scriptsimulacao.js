@@ -104,6 +104,65 @@ function enviar() {
 }
 
 /*
+
+ """diretorio = r"C:\Users\Fabiano\OneDrive\DIVERSOS\Documentos\Estudos\html-css\Projeto_Django1\projeto_cad_usuarios\app_cad_usuarios\templates\usuarios\home.html"
+    checkboxinfo0 = os.(diretorio.find("#info1"))
+    checkboxinfo1 = window.document.querySelector("#info2")
+    checkboxinfo2 = window.document.querySelector("#info3")
+    checkboxinfo3 = window.document.querySelector("#info4")
+    checkboxinfo4 = window.document.querySelector("#info5")
+    checkboxinfo5 = window.document.querySelector("#info6")
+    checkboxinfo6 = window.document.querySelector("#info10")
+    checkboxinfo7 = window.document.querySelector("#info11")
+    checkboxinfo8 = window.document.querySelector("#info12")
+    checkboxinfo9 = window.document.querySelector("#info13")
+    checkboxinfo10 = window.document.querySelector("#info14")
+    checkboxinfo11 = window.document.querySelector("#info15")
+    checkboxinfo12 = window.document.querySelector("#info16")
+    checkboxinfo13 = window.document.querySelector("#info17")
+    checkboxinfo14 = window.document.querySelector("#info18")
+    checkboxinfo15 = window.document.querySelector("#info19")
+    checkboxinfo16 = window.document.querySelector("#info20")
+    checkboxinfo17 = window.document.querySelector("#info21")
+    checkboxinfo18 = window.document.querySelector("#info22")
+    checkboxinfo19 = window.document.querySelector("#info23")
+    checkboxinfo20 = window.document.querySelector("#info24")
+    checkboxinfo21 = window.document.querySelector("#info25")
+    checkboxinfo22 = window.document.querySelector("#info26")
+    checkboxinfo23 = window.document.querySelector("#info27")
+    checkboxinfo24 = window.document.querySelector("#info28")
+    checkboxinfo25 = window.document.querySelector("#info29")
+    checkboxinfo26 = window.document.querySelector("#info30")
+    checkboxinfo27 = window.document.querySelector("#info31")
+    checkboxinfo28 = window.document.querySelector("#info32")
+    checkboxinfo29 = window.document.querySelector("#info33")
+    checkboxinfo30 = window.document.querySelector("#info34")
+    checkboxinfo31 = window.document.querySelector("#info35")
+    checkboxinfo32 = window.document.querySelector("#info36")
+    checkboxinfo33 = window.document.querySelector("#info37")
+
+    caminho=[checkboxinfo0,checkboxinfo1, checkboxinfo2, checkboxinfo3, checkboxinfo4, checkboxinfo5, checkboxinfo6, checkboxinfo7, checkboxinfo8, checkboxinfo9, checkboxinfo10, checkboxinfo11, checkboxinfo12, checkboxinfo13, checkboxinfo14, checkboxinfo15, checkboxinfo16, checkboxinfo17, checkboxinfo18, checkboxinfo19, checkboxinfo20, checkboxinfo21, checkboxinfo22, checkboxinfo23, checkboxinfo24, checkboxinfo25, checkboxinfo26, checkboxinfo27, checkboxinfo28, checkboxinfo29, checkboxinfo30, checkboxinfo31, checkboxinfo32, checkboxinfo33]
+
+    info = window.document.getElementById("info38")
+    
+    valor = [20, 50, 20, 0, 50, 0, 20, 50, 50, 50, 100, 50, 20, 50, 50, 100, 50, 50, 50, 50, 50, 50, 20, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 0]
+    
+    teste = 0
+
+    resultado = []
+
+    total = 0
+    
+    n = 0
+
+    while n<34:
+        if caminho[n] == checked:
+            total += valor[n]
+        n=n+1
+
+    checkboxinfo34 = window.document.querySelector("#info7")
+    checkboxinfo35 = window.document.querySelector("#info8")"""
+
 function enviar() {
     var checkboxinfo0 = window.document.querySelector("#info1");
     var checkboxinfo1 = window.document.querySelector("#info2");
