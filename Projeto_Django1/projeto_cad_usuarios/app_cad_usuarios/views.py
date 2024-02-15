@@ -1,8 +1,10 @@
+import os
 from django.shortcuts import render
 from .models import Usuario
 
 def home(request):
     return render(request,'usuarios/home.html')
+
 
 def usuarios(request):
     #salvar os dados do formulário no banco de dados
@@ -49,6 +51,33 @@ def usuarios(request):
     }
     # Retornar os dados para a página de listagem de usuários.
     return render(request, 'usuarios/usuarios.html', usuarios)
+
+    
+def resultadosimulacao(request):
+    # calcula o resultado da simulaçao e apresenta valor ao cliente
+   
+    checkboxinfo0 = 'teste'
+
+    return render(request, 'resultadosimulacao/resultadosimulacao.html', checkboxinfo0)
+
+
+
+    
+    # outrasinfo = [Number(checkboxinfo34.value), Number(checkboxinfo35.value)]
+
+    # outrosvalores = [50, 50]
+
+    #total2 = 0
+
+    #html = '';
+    
+
+    #for (var n = 0; n<2; n++) {
+        #total2=total2+(outrasinfo[n]*outrosvalores[n])}
+
+    #totalgeral = total+total2 
+
+    #return document.querySelector('#info38').innerHTML=html
 
 
 

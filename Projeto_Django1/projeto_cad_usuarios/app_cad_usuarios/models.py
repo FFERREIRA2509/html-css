@@ -1,6 +1,7 @@
 from django.db import models
 
 class Usuario(models.Model):
+    # define a modelagem (tipos) de qcampos para gravação em DB
     id_usuario = models.AutoField(primary_key=True)
     nome = models.TextField(max_length=255)
     celular = models.TextField()

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fazer Simulação</title>
     <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
-    <link rel="stylesheet" href="{% static 'falecomcontadorestilo.css' %}">
+    <link rel="stylesheet" href="{% static 'css/falecomcontadorestilo.css' %}">
     <script src="{% static 'js/scriptsimulacao.js' %}"></script>
 </head>
 <body>
@@ -52,12 +52,12 @@
             </div>
             <div id="formulario"> <strong>Possui dependentes?*</strong>
                 <div id="checkbox">
-                    <input class="simulacao1" type="number" name="dependentes" id="info7" min="0"><label id="label" for="info7"> </label><br>
+                    <input required class="simulacao1" type="number" name="dependentes" id="info7" min="0"><label id="label" for="info7"> </label><br>
                 </div>
             </div>
             <div id="formulario"> <strong>Quantas contas bancárias você possui?*</strong>
                 <div id="checkbox">
-                    <input class="simulacao1" type="number" name="conta_banco" id="info8" min="0"><label id="label" for="info8"> </label><br>
+                    <input required class="simulacao1" type="number" name="conta_banco" id="info8" min="0"><label id="label" for="info8"> </label><br>
                 </div>
             </div>
             
@@ -129,13 +129,12 @@
                     <input class="simulacao2" type="radio" name="dividas" id="info37"><label id="label" for="info37">  Não</label><br>
                 </div>
             </div>
-            <script src="{% static 'js/scriptsimulacao.js' %}"></script>
     
-            <div class="simulacao2" onclick="click" enviar() id="info38">Calcular</div>
+            <div class="simulacao2" onclick="enviar()" id="info38">
+               
+            </div>
+            <button class="form-control-sm" data-button >Calcular Simulação.</button>
 
-            <button class="form-control-sm" data-button onclick="click">Calcular Simulação.</button>
-            
-            
         </form>
     </main>
 
