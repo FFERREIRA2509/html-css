@@ -55,8 +55,8 @@ def usuarios(request):
     
 def resultadosimulacao(request):
     # calcula o resultado da simulaçao e apresenta valor ao cliente
-    checkboxinfo0 = {5+5}
-    return render(request, 'usuarios/resultadosimulacao.html', {checkboxinfo0})
+    checkboxinfo0 = {'':5+5}
+    return render(request, 'usuarios/resultadosimulacao.html', {'':checkboxinfo0})
 
 
 
