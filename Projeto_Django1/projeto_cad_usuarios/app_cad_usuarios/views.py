@@ -58,7 +58,7 @@ def resultadosimulacao(request):
    
     checkboxinfo0 = 'teste'
 
-    return render(request, 'resultadosimulacao/resultadosimulacao.html', checkboxinfo0)
+    return render(request, 'usuarios/resultadosimulacao.html', checkboxinfo0)
 
 
 

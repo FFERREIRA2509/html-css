@@ -1,7 +1,7 @@
 from django.db import models
 
 class Usuario(models.Model):
-    # define a modelagem (tipos) de qcampos para gravação em DB
+    # define a modelagem (tipos) de qcampos do formulário para gravação em DB
     id_usuario = models.AutoField(primary_key=True)
     nome = models.TextField(max_length=255)
     celular = models.TextField()
@@ -38,9 +38,6 @@ class Usuario(models.Model):
     ouro = models.CharField(max_length=5, null=True)
     outrosbens = models.CharField(max_length=5, null=True)
     dividas = models.CharField(max_length=5)
-
-
-
 
 
 

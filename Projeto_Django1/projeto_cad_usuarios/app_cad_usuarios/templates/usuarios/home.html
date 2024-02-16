@@ -7,7 +7,6 @@
     <title>Fazer Simulação</title>
     <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
     <link rel="stylesheet" href="{% static 'css/falecomcontadorestilo.css' %}">
-    <script src="{% static 'js/scriptsimulacao.js' %}"></script>
 </head>
 <body>
     <main>
@@ -17,7 +16,7 @@
             <img src="{% static 'imagens/contador.png' %}" alt="Contador">
         
         </div>
-        <form type="email" action="{% url 'listagem_usuarios' %}" method="post" autocomplete="on" data-form name="email">
+        <form type="email" action="{% url 'calculo' %}" method="post" autocomplete="on" data-form name="email">
             {% csrf_token %}
             <div id="formulario"><label for="inome">Nome*</label>
                 <input type="text" name="nome" id="inome" required maxlength="50" placeholder="Nome completo" autocomplete="name">
@@ -130,9 +129,6 @@
                 </div>
             </div>
     
-            <button class="bt2" onclick="enviar()" id="info38">
-               
-            </button>
             <button class="form-control-sm" data-button >Calcular Simulação.</button>
 
         </form>
