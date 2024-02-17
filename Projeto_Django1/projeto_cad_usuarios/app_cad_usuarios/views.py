@@ -6,7 +6,7 @@ def home(request):
     return render(request,'usuarios/home.html')
 
 
-def usuarios(request):
+def usuarios(request, db):
     #salvar os dados do formulário no banco de dados
     novo_usuario = Usuario()
     novo_usuario.nome = request.POST.get('nome')
@@ -44,7 +44,7 @@ def usuarios(request):
     novo_usuario.ouro = request.POST.get('ouro')
     novo_usuario.outrosbens = request.POST.get('outrosbens')
     novo_usuario.dividas = request.POST.get('dividas')
-    novo_usuario.save()
+    novo_usuario.save()#salva no banco de dados
     # Exibir todos os usuários cadastrados em uma nova página.
     usuarios = {
         'usuarios': Usuario.objects.all()
@@ -56,9 +56,11 @@ def usuarios(request):
 def resultadosimulacao(request):
     # calcula o resultado da simulaçao e apresenta valor ao cliente
     checkboxinfo0 = {'Valor':5+5}
-    return render(request, 'usuarios/resultadosimulacao.html', {'Valor':checkboxinfo0})
+    return render(request, 'usuarios/resultadosimulacao.html', {'Valor':checkboxinfo0})# esse usuarios é da pasta do templates
 
-print("teste")
+all_entries = Usuario.objects.all()
+
+print(all_entries)
 
     
     # outrasinfo = [Number(checkboxinfo34.value), Number(checkboxinfo35.value)]
