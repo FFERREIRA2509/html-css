@@ -1,4 +1,6 @@
+import datetime
 from django.db import models
+from django.forms import ChoiceField
 
 class Usuario(models.Model):
     # define a modelagem (tipos) de qcampos do formulário para gravação em DB
@@ -6,9 +8,9 @@ class Usuario(models.Model):
     nome = models.TextField(max_length=255)
     celular = models.TextField()
     email = models.EmailField()
-    enviou_declaracao = models.CharField(max_length=5)
-    alteracao_cadastral = models.CharField(max_length=5)
-    conjuge = models.CharField(max_length=5)
+    enviou_declaracao = models.CharField(max_length=5, null=True)
+    alteracao_cadastral = models.CharField(max_length=5, null=True)
+    conjuge = models.CharField(max_length=5, null=True)
     dependentes = models.IntegerField()
     conta_banco = models.IntegerField()
     empregado = models.CharField(max_length=5, null=True)
@@ -37,7 +39,8 @@ class Usuario(models.Model):
     participacaosoci = models.CharField(max_length=5, null=True)
     ouro = models.CharField(max_length=5, null=True)
     outrosbens = models.CharField(max_length=5, null=True)
-    dividas = models.CharField(max_length=5)
+    dividas = models.CharField(max_length=5, null=True)
+    
 
 
 

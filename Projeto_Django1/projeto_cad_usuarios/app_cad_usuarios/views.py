@@ -1,14 +1,15 @@
 import os
 from django.shortcuts import render
 from .models import Usuario
+from django.http import HttpResponseRedirect
 
 def home(request):
     return render(request,'usuarios/home.html')
 
 
-def usuarios(request, db):
+def usuarios(request):
     #salvar os dados do formulário no banco de dados
-    novo_usuario = Usuario()
+    novo_usuario = Usuario() #Usuario da Classe em models
     novo_usuario.nome = request.POST.get('nome')
     novo_usuario.celular = request.POST.get('celular')
     novo_usuario.email = request.POST.get('email')
@@ -50,17 +51,19 @@ def usuarios(request, db):
         'usuarios': Usuario.objects.all()
     }
     # Retornar os dados para a página de listagem de usuários.
-    return render(request, 'usuarios/usuarios.html', usuarios)
-
-    
-def resultadosimulacao(request):
     # calcula o resultado da simulaçao e apresenta valor ao cliente
-    checkboxinfo0 = {'Valor':5+5}
-    return render(request, 'usuarios/resultadosimulacao.html', {'Valor':checkboxinfo0})# esse usuarios é da pasta do templates
+    teste = Usuario.objects.all()
+    checkboxinfo0 = {'Valor': teste}
+    return render(request, 'usuarios/resultadosimulacao.html', {'Valor':teste})# esse usuarios é da pasta do templates
+    #return render(request, 'usuarios/usuarios.html', usuarios)
 
-all_entries = Usuario.objects.all()
 
-print(all_entries)
+
+
+
+#print(all_entries = Usuario.objects.all())
+
+
 
     
     # outrasinfo = [Number(checkboxinfo34.value), Number(checkboxinfo35.value)]
