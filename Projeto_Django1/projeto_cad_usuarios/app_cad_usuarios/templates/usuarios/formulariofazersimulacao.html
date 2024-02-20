@@ -1,0 +1,175 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazer Simulação 2</title>
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/falecomcontadorestilo.css' %}">
+</head>
+<body>
+    <main>
+        <div>
+            <h1>Serviços de qualidade, honorário justo!</h1>
+            <p id="orientação">Preencha os dados e faça uma simulação de quanto você pagaria de honorários para ter sua declaração feita por nós!</p>
+            <img src="{% static 'imagens/contador.png' %}" alt="Contador">
+        
+        </div>
+        <form type="email" action="{% url 'fazersimulacao' %}" method="post" autocomplete="on" data-form name="email">
+            {% csrf_token %}
+            <div id="formulario"><label for="inome">Nome*</label>
+                <input type="text" name="nome" id="inome" required maxlength="50" placeholder="Nome completo" autocomplete="name">
+            </div>
+            <div id="formulario"><label for="icelular">Celular (00)00000-0000*</label>
+                <input type="tel" name="celular" id="icelular" required maxlength="50" placeholder="(00)00000-0000" pattern="^\(\d{2}\)\d{4,5}-\d{4,5}$" autocomplete="mobile">
+            </div>
+            <div id="formulario"><label for="iemail">e-mail*</label>
+                <input type="email" name="email" id="iemail" required placeholder="seu_email@seu_mail.com" autocomplete="email">
+            </div>
+            <div id="formulario"><input type="checkbox" name="copia_orcamento" id="imensagem"><label id="label" for="imensagem">  Desejo receber uma cópia do orçamento no meu e-mail</label><br>
+            </div>
+           
+            <h1>Responda as perguntas abaixo e ao final do questionário o sistema calculará sua <strong>SIMULAÇÃO</strong>.</h1>
+            <div id="formulario"> <strong><label for="declaracao">Você enviou sua Declaração de Imposto de Renda no ano de 2023?*</label></strong>
+                <div id="checkbox">
+                    <select class="simulacao1" type="options" name="envioudeclaracao" id="declaracao" required>
+                    <option name='SIM' value=1>  SIM  </option>
+                    <option name='NAO' value=0>  NÃO  </option>
+                    </select>
+                </div>
+            </div>
+            <div id="formulario"> <strong><label for="declaracao">No ano de 2023 houve alteração dos cadastrais, como por exemplo, endereço, alteração no nome, etc.?*</label></strong>
+                <div id="checkbox">
+                    <select class="simulacao1" type="options" name="envioudeclaracao" id="declaracao" required>
+                    <option value="SIM">  SIM  </option>
+                    <option value="NAO">  NÃO  </option>
+                    </select>
+                </div>
+            </div>
+            <div id="formulario"> <strong><label for="declaracao">Possui cônjuge?*</label></strong>
+                <div id="checkbox">
+                    <select class="simulacao1" type="options" name="envioudeclaracao" id="declaracao" required>
+                    <option value="SIM">  SIM  </option>
+                    <option value="NAO">  NÃO  </option>
+                    </select>
+                </div>
+            </div>
+
+                <!--
+                <div id="checkbox">
+                    <input class="simulacao1" type="radio" name="envioudeclaracao" id="sim" ><label id="label" for="sim" required value="1">  Sim</label><br>
+                    <input class="simulacao2" type="radio" name="envioudeclaracao" id="não" ><label id="label" for="não" required value="0">  Não</label><br>
+                </div>
+            </div>
+            <div id="formulario"> <strong>No ano de 2023 houve alteração dos cadastrais, como por exemplo, endereço, alteração no nome, etc.?*</strong>
+                <div id="checkbox">
+                    <input class="simulacao1" type="radio" name="alteracao_cadastral" id="info3" value="1"><label id="label" for="info3">  Sim</label><br>
+                    <input class="simulacao2" type="radio" name="alteracao_cadastral" id="info4"><label id="label" for="info4" value="0">  Não</label><br>
+                </div>
+            </div>
+            <div id="formulario"> <strong>Possui cônjuge?*</strong>
+                <div id="checkbox">
+                    <input class="simulacao1" type="radio" name="conjuge" id="info5"><label id="label" for="info5" value="1" required>  Sim</label><br>
+                    <input class="simulacao2" type="radio" name="conjuge" id="info6"><label id="label" for="info6" value="0" required>  Não</label><br>
+                </div>
+            -->
+            </div>
+            <div id="formulario"> <strong>Possui dependentes?*</strong>
+                <div id="checkbox">
+                    <input required class="simulacao1" type="number" name="dependentes" id="info7" min="0"><label id="label" for="info7"> </label><br>
+                </div>
+            </div>
+            <div id="formulario"> <strong>Quantas contas bancárias você possui?*</strong>
+                <div id="checkbox">
+                    <input required class="simulacao1" type="number" name="conta_banco" id="info8" min="0"><label id="label" for="info8"> </label><br>
+                </div>
+            </div>
+            
+            <div id="formulario"><strong>Selecione as suas fontes de renda:</strong>
+                <div id="checkbox">
+                    <input blank=True null=True class="simulacao1" type="checkbox" name="empregado" id="info10"><label id="label" for="info10">  Empregado de empresa pública ou privada</label><br>
+                    <input blank=True class="simulacao2" type="checkbox" name="mei" id="info11"><label id="label" for="info11">  MEI - Micro empreendedor individual</label><br>
+                </div>
+                <div id="checkbox2">
+                    <input class="simulacao1" type="checkbox" name="autonomo" id="info12"><label id="label" for="info12">  Autônomo ou Profissional Liberal</label><br>
+                    <input class="simulacao2" type="checkbox" name="aluguel" id="info13"><label id="label" for="info13" value="Aluguel">  Aluguel</label><br>
+                </div>
+                <div id="checkbox">
+                    <input class="simulacao1" type="checkbox" name="rural" id="info14"><label id="label" for="info14">  Atividade Rural</label><br>
+                    <input class="simulacao2" type="checkbox" name="pensionista" id="info15"><label id="label" for="info15">  Pensionista</label><br>
+                </div>
+                <div id="checkbox2">
+                    <input class="simulacao1" type="checkbox" name="previdencia" id="info16"><label id="label" for="info16">  Previdência Complementar</label><br>
+                    <input class="simulacao2" type="checkbox" name="dividendos" id="info17"><label id="label" for="info17">  Lucros e dividendos</label><br>
+                </div>
+                <div id="checkbox">
+                    <input class="simulacao1" type="checkbox" name="prolabore" id="info18"><label id="label" for="info18">  Pró-labore</label><br>
+                    <input class="simulacao2" type="checkbox" name="exterior" id="info19"><label id="label" for="info19">  Rendimentos recebidos do exterior</label><br>
+                </div>
+                <div id="checkbox">
+                    <input class="simulacao1" type="checkbox" name="rra" id="info20"><label id="label" for="info20">  Rendimentos Recebidos Acumuladamente</label><br>
+                    <input class="simulacao2" type="checkbox" name="outras" id="info21"><label id="label" for="info21">  Outras</label><br>
+                </div>
+                
+            </div>
+
+            <div id="formulario"><strong>Selecione as despesas referente ao ano 2023:</strong>
+                <div id="checkbox">
+                    <input class="simulacao1" type="checkbox" name="despesasmedicas" id="info22"><label id="label" for="info22">  Despesas Médicas</label><br>
+                    <input class="simulacao2" type="checkbox" name="instrucao" id="info23"><label id="label" for="info23">  Despesas com instrução</label><br>
+                </div>
+                <div id="checkbox2">
+                    <input class="simulacao1" type="checkbox" name="pa" id="info24"><label id="label" for="info24">  Pensão alimentícia</label><br>
+                    <input class="simulacao2" type="checkbox" name="pc" id="info25"><label id="label" for="info25">  Previdência complementar</label><br>
+                </div>
+                <div id="checkbox2">
+                    <input class="simulacao1" type="checkbox" name="doacoes" id="info26"><label id="label" for="info26">  Doações</label><br>
+                    <input class="simulacao2" type="checkbox" name="outrasdespesas" id="info27"><label id="label" for="info27"> Outras</label><br>
+                </div>
+            </div>
+
+            <div id="formulario"><strong>Selecione seus bens e direitos:</strong>
+                <div id="checkbox">
+                    <input class="simulacao1" type="checkbox" name="imovel" id="info28"><label id="label" for="info28">  Imóvel</label><br>
+                    <input class="simulacao2" type="checkbox" name="veiculo" id="info29"><label id="label" for="info29">  Veículo</label><br>
+                </div>
+                <div id="checkbox2">
+                    <input class="simulacao1" type="checkbox" name="aplicacaofinan" id="info30"><label id="label" for="info30">  Aplicações Financeiras</label><br>
+                    <input class="simulacao2" type="checkbox" name="acoes" id="info31"><label id="label" for="info31">  Ações ou fundos de investimento</label><br>
+                </div>
+                <div id="checkbox2">
+                    <input class="simulacao1" type="checkbox" name="criptoativos" id="info32"><label id="label" for="info32">  Criptoativos</label><br>
+                    <input class="simulacao2" type="checkbox" name="participacaosoci" id="info33"><label id="label" for="info33"> Participação societária</label><br>
+                </div>
+                <div id="checkbox2">
+                    <input class="simulacao1" type="checkbox" name="ouro" id="info34"><label id="label" for="info34">  Ouro</label><br>
+                    <input class="simulacao2" type="checkbox" name="outrosbens" id="info35"><label id="label" for="info35"> Outros</label><br>
+                </div>
+            </div>
+            <div id="formulario"> <strong><label for="declaracao">Possui dívidas acima de R$ 5.000,00?* (Exceto consórcios e financiamnetos do Sistema Financeiro da Habitação)</label></strong>
+                <div id="checkbox">
+                    <select class="simulacao1" type="options" name="envioudeclaracao" id="declaracao" required>
+                    <option value="SIM">  SIM  </option>
+                    <option value="NAO">  NÃO  </option>
+                    </select>
+                </div>
+            </div>
+            <!--
+            <div id="formulario"> <strong>Possui dívidas acima de R$ 5.000,00?* (Exceto consórcios e financiamnetos do Sistema Financeiro da Habitação</strong>)
+                <div id="checkbox">
+                    <input class="simulacao1" type="radio" name="dividas" id="info36"><label id="label" for="info36" required value="1">  Sim</label><br>
+                    <input class="simulacao2" type="radio" name="dividas" id="info37"><label id="label" for="info37" required value="0">  Não</label><br>
+                </div>
+            </div>
+            -->
+    
+            <button class="form-control-sm" data-button >Calcular Simulação.</button>
+
+        </form>
+    </main>
+
+
+    
+</body>
+</html>
