@@ -1,7 +1,10 @@
 import os
 from django.shortcuts import render
+from django import templatetags
+from django import template
 from .models import Usuario, simulacao
 from django.http import HttpResponseRedirect
+from django.http import HttpResponse
 
 def home(request):
     return render(request,'usuarios/formfazersimulacao.html')
@@ -57,9 +60,14 @@ def usuarios(request):
     return render(request, 'usuarios/resultadosimulacao.html', {'Valor':teste})# esse usuarios é da pasta do templates
     #return render(request, 'usuarios/usuarios.html', usuarios)
 
-def fazersimulacao(request):
-    #salvar os dados do formulário no banco de dados
-    novo_usuario = simulacao() #Usuario da Classe em models
+
+
+def fazersimulacao(request): 
+    return render(request, 'usuarios/formfazersimulacao.html')
+
+#render(request, 'usuarios/formfazersimulacao.html', context=context)# esse usuarios é da pasta do templates
+#salvar os dados do formulário no banco de dados
+    """novo_usuario = Usuario() #Usuario da Classe em models
     novo_usuario.nome = request.POST.get('nome')
     novo_usuario.celular = request.POST.get('celular')
     novo_usuario.email = request.POST.get('email')
@@ -99,13 +107,9 @@ def fazersimulacao(request):
     # Exibir todos os usuários cadastrados em uma nova página.
     usuarios = {
         'usuarios': simulacao.objects.all()
-    }
+    }"""
     # Retornar os dados para a página de listagem de usuários.
     # calcula o resultado da simulaçao e apresenta valor ao cliente
-    form = simulacao()
-    context = {
-        'form': form
-    }
-    return render(request, 'usuarios/formfazersimulacao.html', context=context)# esse usuarios é da pasta do templates
-
+    #form = {'form': Teste}
+    
 

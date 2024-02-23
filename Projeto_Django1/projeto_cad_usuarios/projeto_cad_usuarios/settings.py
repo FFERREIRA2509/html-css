@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app_cad_usuarios',
-    'f4contabilidade.apps.F4ContabilidadeConfig',
+    'f4contabilidade',
     'crispy_forms',
 ]
 

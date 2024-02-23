@@ -3,7 +3,7 @@ from django.db import models
 from django.forms import ChoiceField
 
 class Usuario(models.Model):
-    # define a modelagem (tipos) de qcampos do formulário para gravação em DB
+    # define a modelagem (tipos) de campos do formulário para gravação em DB
     id_usuario = models.AutoField(primary_key=True)
     nome = models.TextField(max_length=255)
     celular = models.TextField()
@@ -45,7 +45,7 @@ class Usuario(models.Model):
         return self.nome
     
 class simulacao(models.Model):
-    # define a modelagem (tipos) de qcampos do formulário para gravação em DB
+    # define a modelagem (tipos) de campos do formulário para gravação em DB
     id_usuario = models.AutoField(primary_key=True)
     nome = models.TextField(max_length=255)
     celular = models.TextField()
