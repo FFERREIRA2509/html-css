@@ -3,6 +3,6 @@ from app_cad_usuarios import views
 
 
 urlpatterns = [
-    path('formfazersimulacao/', views.fazersimulacao, name='formfazersimulacao'),
-    
+    path('', views.fazersimulacao, name='fazersimulacao'),
+    path('processa_formulario/', views.processa_formulario, name='processa_formulario')
 ]

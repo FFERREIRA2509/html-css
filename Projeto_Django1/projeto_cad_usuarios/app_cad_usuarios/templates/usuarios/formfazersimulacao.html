@@ -1,7 +1,9 @@
 
-<h1>Teste2</h1>
+<h1>Testando</h1>
 
-<form method="POST"> 
-   teste
-
+<form action="{% url 'processa_formulario' %}" method="POST"> {% csrf_token %} 
+<table>
+    {{form}}
+</table>
+<input type='submit'>
 </form>

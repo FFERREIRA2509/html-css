@@ -5,14 +5,14 @@ from django.forms import ChoiceField
 class Usuario(models.Model):
     # define a modelagem (tipos) de campos do formulário para gravação em DB
     id_usuario = models.AutoField(primary_key=True)
-    nome = models.TextField(max_length=255)
-    celular = models.TextField()
-    email = models.EmailField()
+    nome = models.TextField(max_length=255, null=True)
+    celular = models.TextField(max_length=12, null=True)
+    email = models.EmailField(null=True)
     enviou_declaracao = models.CharField(max_length=5, null=True)
     alteracao_cadastral = models.CharField(max_length=5, null=True)
     conjuge = models.CharField(max_length=5, null=True)
-    dependentes = models.IntegerField()
-    conta_banco = models.IntegerField()
+    dependentes = models.IntegerField(null=True)
+    conta_banco = models.IntegerField(null=True)
     empregado = models.CharField(max_length=5, null=True)
     mei = models.CharField(max_length=3, null=True)
     autonomo = models.CharField(max_length=5, null=True)
@@ -44,17 +44,17 @@ class Usuario(models.Model):
     def __str__(self):
         return self.nome
     
-class simulacao(models.Model):
+class Pessoa(models.Model):
     # define a modelagem (tipos) de campos do formulário para gravação em DB
     id_usuario = models.AutoField(primary_key=True)
-    nome = models.TextField(max_length=255)
-    celular = models.TextField()
-    email = models.EmailField()
+    nome = models.TextField(max_length=150)
+    celular = models.TextField(null=True)
+    email = models.EmailField(null=True)
     enviou_declaracao = models.CharField(max_length=5, null=True)
     alteracao_cadastral = models.CharField(max_length=5, null=True)
     conjuge = models.CharField(max_length=5, null=True)
-    dependentes = models.IntegerField()
-    conta_banco = models.IntegerField()
+    dependentes = models.IntegerField(null=True)
+    conta_banco = models.IntegerField(null=True)
     empregado = models.CharField(max_length=5, null=True)
     mei = models.CharField(max_length=3, null=True)
     autonomo = models.CharField(max_length=5, null=True)
@@ -83,7 +83,7 @@ class simulacao(models.Model):
     outrosbens = models.CharField(max_length=5, null=True)
     dividas = models.CharField(max_length=5, null=True)
 
-    def __str__(self):
+    def __str__(self) -> str:
         return self.nome
     
 

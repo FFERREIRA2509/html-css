@@ -1,13 +1,16 @@
 import os
+from django.forms import ValidationError
 from django.shortcuts import render
 from django import templatetags
 from django import template
-from .models import Usuario, simulacao
+from .models import Usuario, Pessoa
 from django.http import HttpResponseRedirect
 from django.http import HttpResponse
+from .forms import formularioCadastro
+import requests
 
-def home(request):
-    return render(request,'usuarios/formfazersimulacao.html')
+#def home(request):
+    #return render(request,'usuarios/formfazersimulacao.html')
 
 
 def usuarios(request):
@@ -62,12 +65,10 @@ def usuarios(request):
 
 
 
-def fazersimulacao(request): 
-    return render(request, 'usuarios/formfazersimulacao.html')
-
-#render(request, 'usuarios/formfazersimulacao.html', context=context)# esse usuarios é da pasta do templates
-#salvar os dados do formulário no banco de dados
-    """novo_usuario = Usuario() #Usuario da Classe em models
+def fazersimulacao(request):
+   form = formularioCadastro(request.POST)
+   return render(request, 'usuarios/formfazersimulacao.html', {'form':form})
+   '''novo_usuario = simulacao() #Usuario da Classe em models
     novo_usuario.nome = request.POST.get('nome')
     novo_usuario.celular = request.POST.get('celular')
     novo_usuario.email = request.POST.get('email')
@@ -104,12 +105,19 @@ def fazersimulacao(request):
     novo_usuario.outrosbens = request.POST.get('outrosbens')
     novo_usuario.dividas = request.POST.get('dividas')
     novo_usuario.save()#salva no banco de dados
-    # Exibir todos os usuários cadastrados em uma nova página.
-    usuarios = {
-        'usuarios': simulacao.objects.all()
-    }"""
-    # Retornar os dados para a página de listagem de usuários.
-    # calcula o resultado da simulaçao e apresenta valor ao cliente
-    #form = {'form': Teste}
+'''
     
+   
+    # Exibir todos os usuários cadastrados em uma nova página.
+    
+    #return render(request, 'formfazersimulacao.html', {'form': novo_usuario})
 
+#render(request, 'usuarios/formfazersimulacao.html', context=context)# esse usuarios é da pasta do templates
+#salvar os dados do formulário no banco de dados
+   
+def processa_formulario(request):
+    form = formularioCadastro(request.POST)
+    if form.is_valid():
+        form.save()
+        return HttpResponse('Salvo com sucesso')
+    return HttpResponse('erro interno do sistema')
