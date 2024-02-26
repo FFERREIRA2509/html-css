@@ -2,15 +2,17 @@ import datetime
 from django.db import models
 from django.forms import ChoiceField
 
+
+
 class Usuario(models.Model):
     # define a modelagem (tipos) de campos do formulário para gravação em DB
     id_usuario = models.AutoField(primary_key=True)
     nome = models.TextField(max_length=255, null=True)
     celular = models.TextField(max_length=12, null=True)
     email = models.EmailField(null=True)
-    enviou_declaracao = models.CharField(max_length=5, null=True)
+    enviou_declaracao = models.CharField(max_length=1)
     alteracao_cadastral = models.CharField(max_length=5, null=True)
-    conjuge = models.CharField(max_length=5, null=True)
+    conjuge = models.CharField(max_length=5)
     dependentes = models.IntegerField(null=True)
     conta_banco = models.IntegerField(null=True)
     empregado = models.CharField(max_length=5, null=True)
@@ -43,14 +45,20 @@ class Usuario(models.Model):
 
     def __str__(self):
         return self.nome
-    
-class Pessoa(models.Model):
+
+ENVIOU_DECLARACAO =(
+    (1, 'Sim'),
+    (0, 'Não')
+
+)
+
+class Pessoa (models.Model):
     # define a modelagem (tipos) de campos do formulário para gravação em DB
     id_usuario = models.AutoField(primary_key=True)
-    nome = models.TextField(max_length=150)
+    nome = models.TextField(max_length=150, error_messages={"required":''})
     celular = models.TextField(null=True)
     email = models.EmailField(null=True)
-    enviou_declaracao = models.CharField(max_length=5, null=True)
+    enviou_declaracao = models.CharField(max_length=1, choices=ENVIOU_DECLARACAO)
     alteracao_cadastral = models.CharField(max_length=5, null=True)
     conjuge = models.CharField(max_length=5, null=True)
     dependentes = models.IntegerField(null=True)
