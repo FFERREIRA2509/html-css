@@ -6,8 +6,45 @@ from .models import Pessoa
 class formularioCadastro(forms.ModelForm):
     class Meta:    
         model = Pessoa
-        fields = ('nome', 'celular', 'email', 'enviou_declaracao', 'alteracao_cadastral', 'conjuge', 'dependentes', 'conta_banco', 'empregado', 'mei', 'autonomo', 'aluguel', 'rural', 'pensionista', 'previdencia', 'dividendos', 'prolabore', 'rra', 'outras', 'despesasmedicas', 'instrucao', 'pa', 'pc', 'doacoes', 'outrasdespesas', 'imovel', 'veiculo', 'aplicacaofinan', 'acoes', 'criptoativos', 'participacaosoci', 'ouro', 'outrosbens', 'dividas')
-    #def __init__(self, *args, **kwargs):
-        #super(formularioCadastro, self).__init__(*args, **kwargs)
-        #self.fields['nome'].error_messages['required'] =''
-        #self.fields['celular'].error_messages['required'] =''
+        fields = '__all__' #--todos, caso contrário deve-se destacar um a um dos campos que se pretende renderizar
+        labels = {'nome': 'Nome:',
+                  'celular': 'Celular:',
+                    'email':'E-mail',
+                    'enviou_declaracao': 'Enviou declaração em 2023?', 
+                    'alteracao_cadastral': 'Teve alteração cadastral em 2023? Alteração de nome e endereço, por exemplo.',
+                    'conjuge':'Possui conjuge?',
+                    'dependentes':'Possui dependentes?', 
+                    'conta_banco':'Quantas contas bancárias possui?', 
+                    'empregado':'Empregado de empresa pública ou privada', 
+                    'mei': 'MEI - Micro empreendedor individual',
+                    'autonomo':'Autônomo ou Profissional Liberal', 
+                    'aluguel':'Aluguel', 
+                    'rural':'Atividade Rural', 
+                    'pensionista':'Pensionista', 
+                    'previdencia':'Previdência complementar', 
+                    'dividendos':'Lucros e dividendos', 
+                    'prolabore':'Pró-labore',
+                    'exterior': 'Rendimentos do exterior', 
+                    'rra':'Rendimentos recebidos acumuladamente', 
+                    'outras':'Outras receitas', 
+                    'despesasmedicas':'Despesas médicas', 
+                    'instrucao': 'Despesa com instrução', 
+                    'pa': 'Pensão alimentícia', 
+                    'pc': 'Previdência Complementar', 
+                    'doacoes':'Doações', 
+                    'outrasdespesas': 'Outras despesas', 
+                    'imovel': 'Imóvel', 
+                    'veiculo': 'Veículo', 
+                    'aplicacaofinan':'Aplicação Financeira', 
+                    'acoes': 'Ações', 
+                    'criptoativos':'Criptoativos', 
+                    'participacaosoci': 'Participação Societária', 
+                    'ouro': 'Ouro', 
+                    'outrosbens':'Outros bens', 
+                    'dividas': 'Dívidas acima de R$ 5.000,00'}
+        widgets = {
+          'nome': forms.Textarea(attrs={'rows':1, 'cols':50}),
+          'celular': forms.Textarea(attrs={'rows':1, 'cols':11}),
+          'email': forms.Textarea(attrs={'rows':1, 'cols':50}),
+        }
+
