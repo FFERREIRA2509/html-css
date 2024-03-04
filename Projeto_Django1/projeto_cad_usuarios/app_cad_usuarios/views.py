@@ -145,3 +145,19 @@ cadastro = Pessoa.objects.all()
 
 print(len(cadastro))
 
+
+def imposto_de_renda(request):
+    return render(request, 'usuarios/imposto_de_renda.html')
+
+def f4(request):
+    return render(request, 'usuarios/f4.html')
+
+def artigos(request):
+    return render(request, 'usuarios/artigos.html')
+
+def serviços(request):
+    return render(request, 'usuarios/serviços.html')
+
+def modelo(request):
+    return render(request, 'usuarios/modelo.html')
+

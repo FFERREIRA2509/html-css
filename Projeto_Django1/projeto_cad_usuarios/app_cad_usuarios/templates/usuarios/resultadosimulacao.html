@@ -1,9 +1,17 @@
 
 <!--Estrutura dá página que será devolvida ao cliente-->
 
+{% extends "usuarios/modelo.html" %}
 
-<div>
-   
-<strong>SIMULAÇÃO <br> Para fazer a sua Declaração de Imposto de Renda com nossos especialistas você pagará R$: {{total}}</strong>
+{% block configuracao_cabecalho %}
+<title>Resultado da Simulação</title>
+{% endblock %}
 
+
+{% block conteudo %}
+<div class="container"> 
+    <h1 class="container"> RESULTADO DA SUA SIMULAÇÃO: </h1> 
+        <p class="container"> Para fazer a sua Declaração de Imposto de Renda com nossos especialistas você pagará R$: {{total}} 
+    </p>
 </div>
+{% endblock %}
