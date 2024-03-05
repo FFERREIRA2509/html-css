@@ -4,30 +4,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     {% block configuracao_cabecalho %}
     <title>F4 CONTABILIDADE LTDA</title>
     {% endblock %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo/sttyle.css">
     <link rel="shortcut icon" href="{% static '/static/imagens/favicon.ico' %}" type="image/x-icon">
-    <link rel="stylesheet" href="{% static 'css/sttyle.css' %}">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+   
     
 </head>
 
 <body>
     {% block menu%}
-    <header>
-        <nav>
-            <a href="f4.html" style="width: 102px; height: 90px; padding-top: 0px;"><img src="/static/imagens/Logosite.png" alt="LogoF4Contabilidade"></a>
-            <a href="serviços.html" style="width: 82px; ">Serviços</a>
-            <a href="#">Imposto de Renda</a>
-            <a href="falecomcontador.html" style="width: 50px; " target="_blank">Contato</a>
-            <a id="artigos" href="artigos.html">Artigos</a>
-            <a id="areadocliente" href="#">Área do Cliente</a>
-            <a href="#" class="abrirempresa">ABRIR MINHA EMPRESA</a>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="f4.html" style="width: 102px; height: 90px; padding-top: 0px;"><img src="/static/imagens/Logosite.png" alt="LogoF4Contabilidade"></a>
+                <a href="serviços.html" style="width: 82px; ">Serviços</a>
+                <a href="#">Imposto de Renda</a>
+                <a href="falecomcontador.html" style="width: 50px; " target="_blank">Contato</a>
+                <a id="artigos" href="artigos.html">Artigos</a>
+                <a id="areadocliente" href="#">Área do Cliente</a>
+                <a href="#" class="abrirempresa">ABRIR MINHA EMPRESA</a>
+            </nav>
+        </header>
+    </div>
    {% endblock %}
    {% block conteudo %}
         <div class="container">
@@ -35,24 +38,33 @@
         </div>
    {% endblock %}
    {% block rodape%}
+<section id="fundo_azul">
     <div class="container" id="sobrenós">
         <nav id="redessociais">
             <ul id="redessociais2">
-                <li id="redessociais4">
-                    <a id="redessociais3" href="f4.html" target="_blank"><img id="logosobrenos" src="/static/imagens/Logosite.png" alt="LogoF4Contabilidade"></a>
+                <li class="redessociais" id="escrito"><h1 id="escrito2">F4 Contabilidade Ltda</h1>
+                    
                 </li>
+                <li class="redessociais">
+                    <a id="redessociais3" href="f4.html" target="_blank"><img id="logoredessociais" src="/static/imagens/Logosite.png" alt="LogoF4Contabilidade"></a>
+                </li>
+                
                 <li class="redessociais">
                     <a id="redessociais3" href="https://www.instagram.com/f4contabilidade/" target="_blank"> <img id="logoredessociais" src="/static/imagens/logoinstagram.png" alt="logoinstagram"></a>
                 </li>
+                
                 <li class="redessociais">
                     <a id="redessociais3" href="https://www.facebook.com/f4contabilidade" target="_blank"> <img id="logoredessociais" src="/static/imagens/logofacebook.png" alt="logofacebook"></a>
                 </li>
+                
                 <li class="redessociais">
                     <a id="redessociais3" href="https://www.linkedin.com/company/f4-contabilidade/?viewAsMember=true" target="_blank"> <img id="logoredessociais" src="/static/imagens/logolinkedin.png" alt="logolinkedin"></a>
                 </li>
+                
                 <li class="redessociais">
                     <a id="redessociais3" href="https://www.youtube.com/@f4contabilidade295" target="_blank"> <img id="logoredessociais" src="/static/imagens/logoyoutube.png" alt="logoyoutube"></a>
                 </li>
+                
                 <li class="redessociais">
                     <a id="redessociais3" href="https://wa.me/5551982124865" target="_blank"> <img id="logoredessociais" src="/static/imagens/logowhats.png" alt="logowhats"></a>
                 </li>
@@ -66,28 +78,36 @@
         <p id="sobrenosparagrafo">
             Nasceu da sociedade entre os irmãos Fabiano Ferreira e Fabrício Ferreira com o intuito de fornecer às Pessoas Físicas e Jurídicas um serviço contábil qualificado e diferenciado, primando sempre pela agilidade e eficiência, apresentando para seus clientes soluções seguras e inovadoras de acordo com a diversidade que o mercado exige.
         </p>
-        <h1 id="sobrenostitulo">
-            Visão
-        </h1>
-        <p id="sobrenosparagrafo">
-            Ser uma empresa reconhecida pela excelência nos serviços contábeis prestados de forma objetiva, com foco no resultado e satisfação de nossos clientes, fornecedores, colaboradores e sociedade.
-        </p>
-        <h1 id="sobrenostitulo">
-            Missão
-        </h1>
-        <p id="sobrenosparagrafo">
-            Prestar serviços contábeis procurando atender as expectativas e objetivos dos nossos clientes situados na região sul do Brasil, de forma eficiente, segura e inovadora, com qualidade e agilidade, visando adequada remuneração aos seus sócios e colaboradores.
-        </p>
-        <h1 id="sobrenostitulo">
-            Valores
-        </h1>
-        <ul id="valores">
-            <li>Satisfação do cliente</li>
-            <li>Ética nas relações</li>
-            <li>Foco nos resultados</li>
-            <li>Qualidade no atendimento e na prestação do serviço</li>
-            <li>Inovação</li>
-        </ul>
+        <div id="escrito3">
+            <div>
+                <h1 id="sobrenostitulo">
+                    Visão
+                </h1>
+                <p id="sobrenosparagrafo">
+                    Ser uma empresa reconhecida pela excelência nos serviços contábeis prestados de forma objetiva, com foco no resultado e satisfação de nossos clientes, fornecedores, colaboradores e sociedade.
+                </p>
+            </div>
+            <div>
+                <h1 id="sobrenostitulo">
+                    Missão
+                </h1>
+                <p id="sobrenosparagrafo">
+                    Prestar serviços contábeis procurando atender as expectativas e objetivos dos nossos clientes situados na região sul do Brasil, de forma eficiente, segura e inovadora, com qualidade e agilidade, visando adequada remuneração aos seus sócios e colaboradores.
+                </p>
+            </div>
+            <div>
+                <h1 id="sobrenostitulo">
+                    Valores
+                </h1>
+                <ul id="valores">
+                    <li>Satisfação do cliente</li>
+                    <li>Ética nas relações</li>
+                    <li>Foco nos resultados</li>
+                    <li>Qualidade no atendimento e na prestação do serviço</li>
+                    <li>Inovação</li>
+                </ul>
+            </div>
+        </div>
         <h1 id="sobrenostitulo">Endereço</h1>
         <p id="sobrenosparagrafo">
             Rua Félix Hoppe nº 387 Loja 01
@@ -107,10 +127,14 @@
                 </li>
             </ul>
         </div>
+        
     </div>
-    <footer class="f4">
-        Site desenvolvido por F4 Contabilidade Ltda
-    </footer>
+</section>
+<footer class="f4">
+    Site desenvolvido por F4 Contabilidade Ltda
+</footer>
     {% endblock %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

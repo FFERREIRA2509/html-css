@@ -465,6 +465,10 @@ ul.destaques2 {
     border: 0.1px solid var(--corazul);
 }
 
+#fundo_azul {
+    background-color: var(--corazul);
+}
+
 #sobrenós {
     min-height: 1180px;
     background-color: var(--corazul);
@@ -472,7 +476,7 @@ ul.destaques2 {
 }
 
 #divisoria {
-    border-bottom: 2px solid var(--cormarron);
+    border-bottom: 2px solid var(--corverde);
     margin: 0px 20px 0px 20px;
 }
 
@@ -482,8 +486,8 @@ ul.destaques2 {
     border-bottom: 5px solid var(--corverde);
     background-color: var(--corazul);
     font-family: var(--fontepadrao); color: var(--corbranco);
-    text-align: right;
-    padding: 5px 10px 5px 0px;
+    text-align: center;
+    padding: 5px 5px 5px 0px;
     width: 250px;
 }
 
@@ -491,8 +495,7 @@ ul.destaques2 {
     font-family: var(--fontepadrao); color: var(--corbranco);
     text-align: justify;
     text-indent: 0px;
-    padding: 0px 150px 0px 150px;
-    font-size: 18px;
+    font-size: 10px;
 }
 
 #valores {
@@ -520,12 +523,25 @@ ul.destaques2 {
 }
 
 #redessociais {
-    margin-left: 65px;
+   
     min-width: 450px;
     max-width: 450px;
     min-height: 130px;
     max-height: 130px;
     background-color: var(--corazul);
+}
+
+#escrito {
+    min-width: 370px;
+    padding-top: 40px;
+}
+
+#escrito2 {
+    font-size: 32px;
+}
+
+#escrito3 {
+    display: flex; 
 }
 
 #redessociais2 {
@@ -542,6 +558,7 @@ ul.destaques2 {
 
 li.redessociais {
     padding-top: 20px;
+    margin-left: 20px;
     padding-right: 20px;
     min-width: 40px;
     max-width: 40px;
@@ -560,6 +577,7 @@ li.redessociais {
 
 #logoredessociais {
     margin-top: 20px;
+    padding-left: 120px;
     padding: 0px;
     min-width: 40px;
     max-width: 40px;
@@ -1198,7 +1216,7 @@ div.renda17 {
     margin-top: 30px;
 }
 
- #renda18 {
+#renda18 {
     border: 1px solid var(--corbranco);
     padding: 10px 10px 10px 10px;
     max-width: 320px; 
