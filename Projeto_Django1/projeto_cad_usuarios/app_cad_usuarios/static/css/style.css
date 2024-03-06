@@ -21,17 +21,67 @@
     padding: 0px;
 }
 
-nav img {
-    width: 75%;
-    height: 90px;
+#menu {
+    width: 80%;
+    min-height: 25vh;
+
 }
 
-header {
-    min-width: 600px;
-    max-width: 1200px;
-    min-height: 90px;
-    margin: auto;
+#menu_servico {
+    margin: 10px 10px 0px 10px;
+    width: 10vh;
 }
+
+#menu_imposto_de_renda {
+    margin: 10px 0px 0px 10px;
+    width: 35vh;
+    
+}
+
+#menu_contato {
+    margin: 10px 0px 0px 0px;
+    width: 18vh;
+    
+}
+
+#menu_artigos {
+    margin: 10px 0px 0px 0px;
+    width: 18vh;
+    
+}
+
+#menu_area {
+    margin: 10px 0px 0px 10px;
+    width: 35vh;
+    
+}
+
+
+
+a.abrirempresa {
+    margin: 10px 0px 0px 10px;
+    width: 45vh; 
+    height: 9vh;
+    background-color: #83a735; 
+    font: MontSerrat-Mediun; 
+    color: white; 
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+nav img {
+    
+    
+    padding-top: 0px;
+    width: 35%;
+    height: 23vh;
+}
+
 
 nav {
     font-size: 18px;
@@ -40,24 +90,12 @@ nav {
     background-color: var(--corbranco);
     font-family: var(--fontepadrao); color: var(--corbranco);
     border-radius: 5px;
-    height: 100px;
+    height: 100%;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 20px;    
 }
-
-
-#artigos {
-    width: 80px;
-    padding-right: 150px
-}
-
-
-#areadocliente {
-    padding-right: 10px;
-}
-
 
 nav > a {
     height:25px;
@@ -222,6 +260,7 @@ h1.competencia{
 
 ul.destaques {
     list-style-type: '\2714\000A0\000A0\000A0\000A0';
+    list-style-position: inside;
     margin-bottom: 39px;
     margin-top: 15px;
     margin-left: -30px;
@@ -229,7 +268,6 @@ ul.destaques {
     font-size: 20px;
     text-align: left;
     color: var(--corazul);
-    list-style-position: inside;
 }
 
 ul > li {
@@ -258,22 +296,6 @@ div.f4contabilidade {
     min-width: 400px;
     max-width: 400px;
     
-}
-
-
-a.abrirempresa {
-    padding: 10px 10px 10px 10px;
-    max-width: 230px; 
-    height: 20px;
-    background-color: #83a735; 
-    font: MontSerrat-Mediun; 
-    color: white; 
-    font-size: 18px;
-    text-decoration: none;
-    font-weight: bold;
-    align-items: center;
-    text-align: center;
-    border-radius: 5px;
 }
 
 a.contador {
@@ -470,7 +492,7 @@ ul.destaques2 {
 }
 
 #sobrenós {
-    min-height: 1180px;
+    min-height: 1000px;
     background-color: var(--corazul);
     color: var(--corbranco);
 }
@@ -483,34 +505,67 @@ ul.destaques2 {
 #sobrenostitulo {
     margin-top: 20px;
     margin-bottom: 20px;
+    border-bottom: 4px solid var(--corverde);
+    background-color: var(--corazul);
+    font-family: var(--fontepadrao); color: var(--corbranco);
+    text-align: center;
+    padding: 5px 5px 5px 0px;
+    width: 30%;
+}
+
+#sobrenostitulo2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-bottom: 5px solid var(--corverde);
     background-color: var(--corazul);
     font-family: var(--fontepadrao); color: var(--corbranco);
     text-align: center;
     padding: 5px 5px 5px 0px;
-    width: 250px;
+    width: 99%;
+}
+
+#sobrenostitulo3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 5px solid var(--corverde);
+    background-color: var(--corazul);
+    font-family: var(--fontepadrao); color: var(--corbranco);
+    text-align: center;
+    padding: 5px 5px 5px 0px;
+    width: 99%;
+}
+
+#sobrenostitulo4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 5px solid var(--corverde);
+    background-color: var(--corazul);
+    font-family: var(--fontepadrao); color: var(--corbranco);
+    text-align: center;
+    padding: 5px 5px 5px 0px;
+    width: 40%;
 }
 
 #sobrenosparagrafo {
     font-family: var(--fontepadrao); color: var(--corbranco);
     text-align: justify;
     text-indent: 0px;
-    font-size: 10px;
+    font-size: 18px;
 }
 
 #valores {
-    list-style-type: decimal;
+   list-style: none;
+    padding-left: 0;
     margin-bottom:20px;
-    margin-top: 15px;
-    margin-left: 90px;
     font-family: var(--fontepadrao);
     font-size: 18px;
     text-align: left;
     color: var(--corbranco);
-    list-style-position: inside;
+ 
 }
 
 #valores > li {
+    background-color: var(--corverde);
     margin: 0px 0px 0px 0px;
 }
 
@@ -542,6 +597,26 @@ ul.destaques2 {
 
 #escrito3 {
     display: flex; 
+    min-height: 300px;
+    max-height: 400px;
+}
+
+div.escrito4 {
+    max-width: 400px;
+    min-width: 300px;
+    min-height: 100px;
+    max-height: 400px;
+    border: 0.1px solid var(--corbranco);
+    border-radius: 5%;
+    padding: 15px;
+    margin: 10px;
+}
+
+#escrito5 {
+    padding-left: 0;
+    border-spacing: 0;
+    margin-left: 10px;
+    
 }
 
 #redessociais2 {
@@ -585,6 +660,22 @@ li.redessociais {
     max-height: 40px;
     border-radius: 50%;
 
+}
+
+#endereco {
+    display: flex;
+    min-height: 150px;
+    max-height: 150px;
+}
+
+#endereco2 {
+    min-height: 50px;
+    max-height: 50px;
+}
+
+#endereco3 {
+    min-height: 100px;
+    max-height: 100px;
 }
 
 #whats {
@@ -1279,4 +1370,10 @@ div.renda17 {
     max-width: 320px;
     max-height: 40px;
     min-height: 40px;
+}
+
+/*REULTADO SIMULACAO*/
+
+#teste {
+    background-color: var(--cormarron);
 }

@@ -3,15 +3,60 @@
 
 {% extends "usuarios/modelo.html" %}
 
+
+
 {% block configuracao_cabecalho %}
 <title>Resultado da Simulação</title>
 {% endblock %}
 
-
 {% block conteudo %}
-<div class="container"> 
-    <h1 class="container"> RESULTADO DA SUA SIMULAÇÃO: </h1> 
-        <p class="container"> Para fazer a sua Declaração de Imposto de Renda com nossos especialistas você pagará R$: {{total}} 
-    </p>
+
+<section>
+    <div class="container" > 
+        <h1 id="teste"> <strong> Você já se perguntou, quanto custa a sua tranquilidade? <br>
+            </strong></h1>
+            <h1> <strong>
+            Quanto custa ter segurança patrimonial de que tudo foi feito corretamente? <br> </strong></h1> 
+            
+            <p > Em um cenário de desafios tributários, seja qual for a complexidade, estamos aqui não apenas para resolver, mas para orientar. <br>Confie em nós para tecer a segurança e a confiabilidade em cada linha de sua narrativa financeira. <br>Deixe-nos ser a melodia tranquila por trás da sinfonia caótica dos impostos, guiando-o com maestria para um futuro financeiro sereno.</p> <br>
+        <h1> <strong>  RESULTADO DA SUA SIMULAÇÃO: </strong>  </h1> 
+        <p > Considerando as informações enviadas, para fazer a sua Declaração de Imposto de Renda com nossos especialistas você pagará R$: {{total}}. <br> </p>
+        <p > Esse valor poderá ser parcelado em até 10 x no cartão de crédito. <br> </p>
 </div>
+</section>
+<section id="renda3">      
+    <div class="container">
+        <h1 id="renda5">Siga os passos a seguir e tenha tranquilidade e segurança que você merece.</h1>
+        <div id="renda6">
+            <div id="renda7">
+                <h1 id="renda8">Passo 1</h1>
+                <h2 class="passo3" id="renda9">Cadastro, aprovação do orçamento e pagamento.</h2>
+                <p class="passo4">Faça o cadastro no nosso site. <br>Faça e aprove o orçamento. <br>Pague no cartão de crédito em até 10 vezes sem juros.</p>
+
+            </div>
+            <div id="passo">
+                <h1 id="renda8">Passo 2</h1>
+                <h2 class="passo3">Envie a documentação necessária</h2>
+                <p class="passo4">Carrege a documentação necessária. <br>Nós analisaremos a documentação, preparamos, enviamos a declaração e lhe devolvemos.</p>
+            
+            </div>
+            <div id="passo">
+                <h1 id="renda8">Passo 3</h1>
+                <h2 class="passo3">Tire todas as suas dúvidas!</h2>
+                <p class="passo4" id="renda10">Caso tenha ficado com alguma dúvida você pode agendar uma call. Um dos nossos contadores irá lhe atender e esclarecer tudo.</p>
+            
+            </div>
+            <div id="passo">
+                <h1 id="renda8">Passo 4</h1>
+                <h2 class="passo3" id="renda9">Pronto, declaração transmitida!</h2>
+                <p class="passo4">Após tirar todas as suas dúvidas e após a aprovação, transmitimos a sua declaração e lhes enviamos cópia por e-mail.</p>
+            
+            </div>
+        </div>
+        <div id="estiloserviço5">
+            <a href="#" id="renda11">INICIAR CADASTRO - PASSO 1</a>
+            <a href="falecomcontador.html" id="renda12" target="_blank">FALE COM UM CONTADOR</a>
+        </div>
+        
+</section>
 {% endblock %}
