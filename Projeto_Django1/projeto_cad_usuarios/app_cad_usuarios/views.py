@@ -161,3 +161,7 @@ def serviços(request):
 def modelo(request):
     return render(request, 'usuarios/modelo.html')
 
+
+def fale(request):
+    return render(request, 'usuarios/falecomcontador.html')
+

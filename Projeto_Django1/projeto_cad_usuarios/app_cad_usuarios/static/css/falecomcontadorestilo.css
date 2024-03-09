@@ -23,6 +23,9 @@
 }
 
 
+/* FALE COM UM CONTADOR */
+
+
 body {
     margin: auto;
     min-width: 450px;
@@ -54,6 +57,7 @@ h1 {
 #orientação {
     font-size: var(--fontedestaque);
     color: var(--corazul);
+    margin-right: 30px;
 }
 
 img {
@@ -131,7 +135,6 @@ form {
 #label {
     padding-left: 15px;
 }
-
 
 
 /*SIMULAÇÃO*/

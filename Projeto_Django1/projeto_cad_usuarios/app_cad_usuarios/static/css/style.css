@@ -56,27 +56,70 @@
     
 }
 
-
-
-a.abrirempresa {
-    margin: 10px 0px 0px 10px;
-    width: 45vh; 
+a.abrirempresa1 {
+    border: 1px solid var(--corverde);
+    margin: 10px 0px 30px 0px;
+    padding: 14px 10px 10px 10px;
+    min-width: 40vh; 
     height: 9vh;
-    background-color: #83a735; 
+    background-color: var(--corverde); 
     font: MontSerrat-Mediun; 
-    color: white; 
+    color: var(--corbranco); 
     font-size: 18px;
     text-decoration: none;
     font-weight: bold;
     align-items: center;
     text-align: center;
     border-radius: 5px;
+
+}
+
+a.abrirempresa1:hover {
+    border: 1px solid var(--corazul);
+    margin-left: 30px;
+    padding: 14px 10px 10px 10px;
+    min-width: 40vh; 
+    height: 9vh;
+    background-color: var(--corbranco); 
+    font: MontSerrat-Mediun; 
+    color: var(--corazul); 
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+a.abrirempresa {
+    border: 1px solid var(--corazul);
+    margin-left: 30px;
+    padding: 10px 10px 10px 10px;
+    max-width: 210px; 
+    height: 20px;
+    background-color: var(--corbranco); 
+    font: MontSerrat-Mediun; 
+    color: var(--corazul); 
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+
 }
 
 
+a.abrirempresa:hover {
+    background-color: var(--corverde);
+    font-size: var(--corbranco);
+    border: 0.1px solid var(--corbranco);
+}
+
+
+
 nav img {
-    
-    
     padding-top: 0px;
     width: 35%;
     height: 23vh;
@@ -109,15 +152,10 @@ nav > a {
     
 }
 
-
-main {
-    min-width: 300px;
-    max-width: 900px;
-    margin: auto;
-    padding: 10px;
-    margin-bottom: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+#abrir_empresa {
+    min-height: 10vh;   
+   
+   
 }
 
 main img {
@@ -133,11 +171,6 @@ body {
     text-align: justify;
 }
 
-div {
-    min-height: 550px;
-    font-size: 15px;
-    text-align: center;
-}
 
 div img {
     width: 100%;
@@ -247,6 +280,7 @@ footer {
 
 div.homeinicial{
     display: flex; align-items: top; justify-content: center;
+    
 }
 
 
@@ -255,6 +289,8 @@ h1.competencia{
     font-size: 40px;
     text-align: left;
     margin-bottom: 0px;
+    font-style: var(--fontedestaque);
+    background-color: #83a735;
     
 }
 
@@ -1371,6 +1407,7 @@ div.renda17 {
     max-height: 40px;
     min-height: 40px;
 }
+
 
 /*REULTADO SIMULACAO*/
 
